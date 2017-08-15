@@ -7,7 +7,13 @@ layout: "default"
 
 **Instructor:** David Sondak (IACS, mailto:dsondak@seas.harvard.edu)
 
-**TFs:** Head TF: Charles Liu, Kevin Wu, Eric Wu
+**TFs:**
+
+    Charles Liu
+
+    Kevin Wu
+
+    Eric Wu
 
 
 ## Meeting Times
