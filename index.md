@@ -56,3 +56,13 @@ layout: "default"
   * TBD  
   * TBD  
 
+## Online Course Pages
+
+* Course GitHub Repo: <https://github.com/IACS-CS-207/cs207-F17/> 
+  * You should clone this repo and update it before each class.
+* Your *private* GitHub Repo: `githubusername/cs207work`
+  * Should contain a HW directory and a labs directorty
+* Canvas: <https://canvas.harvard.edu/courses/30141>
+  * Used for course discussions and 
+  * storing your course grade 
+* Main course website:  <https://iacs-cs-207.github.io/cs207-F17/>
