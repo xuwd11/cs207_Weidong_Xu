@@ -9,11 +9,9 @@ layout: "default"
 
 **TFs:**
 
-    Charles Liu
-
-    Kevin Wu
-
-    Eric Wu
+  Charles Liu
+  Kevin Wu
+  Eric Wu
 
 
 ## Meeting Times
