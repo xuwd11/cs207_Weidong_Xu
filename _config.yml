@@ -1,4 +1,4 @@
-baseurl: /cs207-2016
+baseurl: /cs207-F17
 markdown: kramdown
 kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables"]
