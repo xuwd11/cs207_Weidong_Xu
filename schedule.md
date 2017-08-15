@@ -3,6 +3,8 @@ title: Schedule
 layout: default
 ---
 
+## This is a tentative course schedule.  It is subject to change.
+
 | Week  | Topics                                                        | Weekday               | Date             | Lectures                                           |
 | :---: | :---:                                                         | :---:                 | :---:            | :---:                                              |
 | 1     | Introduction, version control                                 | Monday <br> Wednesday | 8/28 <br> 8/30   | No Class <br> L1                                   |
