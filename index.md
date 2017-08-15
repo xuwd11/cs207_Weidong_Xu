@@ -28,20 +28,31 @@ layout: "default"
 
 ## Office Hours
 
-**David:** 
+**David**
 
-  *Office:* Maxwell-Dworkin, G111
+* *Office*:  Maxwell-Dworkin, G111  
+* *Days and Times*:  
+  * Friday: 11:30 AM - 1:00 PM  
+  * Tuesday: 1:30 PM - 2:30 PM
 
-**Charles:** 
+**Charles**
 
-  *Office:* Maxwell-Dworkin, G111
+* *Office*:    
+* *Days and Times*:  
+  * TBD  
+  * TBD  
 
-**Kevin:** 
+**Kevin**
 
-  *Office:* Maxwell-Dworkin, G111
+* *Office*:   
+* *Days and Times*:  
+  * TBD  
+  * TBD  
 
-**Eric:** 
+**Eric**
 
-  *Office:* Maxwell-Dworkin, G111
-
+* *Office*:    
+* *Days and Times*:  
+  * TBD  
+  * TBD  
 
