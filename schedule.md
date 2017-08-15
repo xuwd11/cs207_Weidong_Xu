@@ -7,7 +7,7 @@ layout: default
 
 | Week  | Topics                                                        | Weekday               | Date             | Lectures                                                   |
 | :---: | :---:                                                         | :---:                 | :---:            | :---:                                                      |
-| 1     | Introduction, version control                                 | Monday <br> Wednesday | 8/28 <br> 8/30   | **No Class** <br> [Lecture 1]()                                       |
+| 1     | Introduction, version control                                 | Monday <br> Wednesday | 8/28 <br> 8/30   | **No Class** <br> [Lecture 1](https://github.com/IACS-CS-207/cs207-F17/blob/master/lectures/L1/L1.ipynb) |
 | 2     | git, chemical kinetics                                        | Monday <br> Wednesday | 9/4 <br> 9/6     | **No Class  Labor Day** <br> L2                            |
 | 3     | chemical kinetics, Python                                     | Monday <br> Wednesday | 9/11 <br> 9/13   | L3 <br> L4                                                 |
 | 4     | Python, documentation, testing                                | Monday <br> Wednesday | 9/18 <br> 9/20   | L5 <br> L6                                                 |
