@@ -1,0 +1,71 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/dsondak/Teaching/Harvard/CS207/F17/cs207-F17/homeworks/HW1
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/?token=b3b89ce0b1cd27613c398a8a7014bbab317b5a168b3a78b4
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=b3b89ce0b1cd27613c398a8a7014bbab317b5a168b3a78b4
+[NotebookApp | INFO] Accepting one-time-token-authenticated connection from ::1
+[NotebookApp | WARNING] Notebook HW1.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: c5474539-ef15-4b51-9f58-a95c4c151819
+[NotebookApp | INFO] Kernel shutdown: c5474539-ef15-4b51-9f58-a95c4c151819
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/dsondak/Teaching/Harvard/CS207/F17/cs207-F17/homeworks/HW1
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/?token=2ac11e160da7fab6fcd861364799447e8ac159f5262a0e8b
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=2ac11e160da7fab6fcd861364799447e8ac159f5262a0e8b
+[NotebookApp | INFO] Accepting one-time-token-authenticated connection from ::1
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | WARNING] 404 GET /favicon.ico (::1) 11.00ms referer=http://localhost:8888/formgrader
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | INFO] Creating new notebook in /source/HW1
+[NotebookApp | INFO] Kernel started: 992a4c78-44e0-4f13-b503-f2c081e9824e
+[NotebookApp | INFO] Saving file at /source/HW1/Untitled.ipynb
+[NotebookApp | INFO] Kernel shutdown: 992a4c78-44e0-4f13-b503-f2c081e9824e
+[NotebookApp | WARNING] delete /source/HW1/Untitled.ipynb
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | WARNING] No notebooks were matched in '/Users/dsondak/Teaching/Harvard/CS207/F17/cs207-F17/homeworks/HW1/source/./HW1'
+[NotebookApp | ERROR] No notebooks were matched by '/Users/dsondak/Teaching/Harvard/CS207/F17/cs207-F17/homeworks/HW1/source/./HW1'
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | WARNING] delete /HW1.ipynb
+[NotebookApp | WARNING] delete /gradebook.db
+[NotebookApp | WARNING] delete /source
+[NotebookApp | WARNING] Directory /Users/dsondak/Teaching/Harvard/CS207/F17/cs207-F17/homeworks/HW1/source not empty
+[NotebookApp | WARNING] 400 DELETE /api/contents/source (::1) 1.63ms referer=http://localhost:8888/tree
+[NotebookApp | WARNING] delete /source/HW1
+[NotebookApp | WARNING] delete /source
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/Users/dsondak/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 65, in list_released_assignments
+        assignments = lister.start()
+      File "/Users/dsondak/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/Users/dsondak/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/Users/dsondak/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/Users/dsondak/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
