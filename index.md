@@ -12,10 +12,10 @@ layout: "default"
 
 ## Meeting Times
 
-Lecture Days:  Monday, Wednesday
+**Lecture Days:**  Monday, Wednesday
 
-Lecture Time:  11:30 AM - 1:00 PM
+**Lecture Time:**  11:30 AM - 1:00 PM
 
-Room \#:  Pierce 301
+**Room \#:**  Pierce 301
 
 **Lectures are mandatory!**
