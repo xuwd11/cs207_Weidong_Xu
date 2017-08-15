@@ -11,9 +11,7 @@ layout: "default"
 
 
   Charles Liu
-
   Kevin Wu
-
   Eric Wu
 
 
