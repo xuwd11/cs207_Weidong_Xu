@@ -9,9 +9,10 @@ layout: "default"
 
 **TFs:**
 
-
   Charles Liu
+
   Kevin Wu
+
   Eric Wu
 
 
@@ -24,3 +25,23 @@ layout: "default"
 **Room \#:**  Pierce 301
 
 **Lectures are mandatory!**
+
+## Office Hours
+
+**David:** 
+
+  *Office:* Maxwell-Dworkin, G111
+
+**Charles:** 
+
+  *Office:* Maxwell-Dworkin, G111
+
+**Kevin:** 
+
+  *Office:* Maxwell-Dworkin, G111
+
+**Eric:** 
+
+  *Office:* Maxwell-Dworkin, G111
+
+
