@@ -3,7 +3,7 @@ title: Schedule
 layout: default
 ---
 
-## This is a tentative course schedule.  It is subject to change.
+### This is a tentative course schedule.  It is subject to change.
 
 | Week  | Topics                                                        | Weekday               | Date             | Lectures                                           |
 | :---: | :---:                                                         | :---:                 | :---:            | :---:                                              |
