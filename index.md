@@ -7,7 +7,7 @@ layout: "default"
 
 **Instructor:** 
 
-* David Sondak  
+* *David Sondak*   
 * *Email*:  <dsondak@seas.harvard.edu>
 * *Office*:  Maxwell-Dworkin, G111  
 * *Office Hours*:  
@@ -16,11 +16,26 @@ layout: "default"
 
 **TFs:**
 
-  Charles Liu
+* *Charles Liu*   
+* *Email*:  
+* *Office*:    
+* *Office Hours*:  
+  * TBD  
+  * TBD
 
-  Kevin Wu
+* *Eric Wu*   
+* *Email*:  
+* *Office*:    
+* *Office Hours*:  
+  * TBD  
+  * TBD
 
-  Eric Wu
+* *Kevin Wu*   
+* *Email*:  
+* *Office*:    
+* *Office Hours*:  
+  * TBD  
+  * TBD
 
 
 ## Meeting Times
