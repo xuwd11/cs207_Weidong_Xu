@@ -16,26 +16,11 @@ layout: "default"
 
 **TFs:**
 
-* *Charles Liu*   
-  * *Email*:  
-  * *Office*:    
-  * *Office Hours*:  
-    * TBD  
-    * TBD
-
-* *Eric Wu*   
-  * *Email*:  
-  * *Office*:    
-  * *Office Hours*:  
-    * TBD  
-    * TBD
-
-* *Kevin Wu*   
-  * *Email*:  
-  * *Office*:    
-  * *Office Hours*:  
-    * TBD  
-    * TBD
+|               | **Charles Liu** | **Eric Wu**             | **Kevin Wu**             |
+| :---:         | :---:           | :---:                   | :---:                    |
+| *Email*       |                 | <eric_wu@g.harvard.edu> | <kevin_wu@g.harvard.edu> |
+| *Office*      | TBD             | TBD                     | TBD                      |
+| *Office Hours*| TBD <br> TBD    | TBD <br> TBD            | TBD <br> TBD             |
 
 
 ## Meeting Times
