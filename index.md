@@ -5,7 +5,7 @@ layout: "default"
 
 ## Contact Information
 
-**Instructor:** David Sondak (IACS, mailto:dsondak@seas.harvard.edu)
+**Instructor:** David Sondak (IACS, <dsondak@seas.harvard.edu>)
 
 **TFs:**
 
