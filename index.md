@@ -5,7 +5,14 @@ layout: "default"
 
 ## Contact Information
 
-**Instructor:** David Sondak (IACS, <dsondak@seas.harvard.edu>)
+**Instructor:** 
+
+* David Sondak  
+* *Email*:  <dsondak@seas.harvard.edu>
+* *Office*:  Maxwell-Dworkin, G111  
+* *Office Hours*:  
+  * Friday: 11:30 AM - 1:00 PM  
+  * Tuesday: 1:30 PM - 2:30 PM
 
 **TFs:**
 
