@@ -67,7 +67,7 @@ After successful completion of this course, you will be able to:
 
 **Lectures are mandatory!**
 
-## Course Website
+## Course Websites
 
 * Course GitHub Repo: <https://github.com/IACS-CS-207/cs207-F17/> 
   * You should clone this repo and update it before each class.
@@ -77,8 +77,6 @@ After successful completion of this course, you will be able to:
   * Used for course discussions and 
   * storing your course grade 
 * Main course website:  <https://iacs-cs-207.github.io/cs207-F17/>
-
-
 
 
 
