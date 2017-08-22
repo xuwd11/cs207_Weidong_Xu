@@ -52,11 +52,11 @@ After successful completion of this course, you will be able to:
 
 **TFs:**
 
-|               | **Charles Liu** | **Eric Wu**             | **Kevin Wu**             |
-| :---:         | :---:           | :---:                   | :---:                    |
-| *Email*       |                 | <eric_wu@g.harvard.edu> | <kevin_wu@g.harvard.edu> |
-| *Office*      | TBD             | TBD                     | TBD                      |
-| *Office Hours*| TBD <br> TBD    | TBD <br> TBD            | TBD <br> TBD             |
+|               | **Charles Liu**        | **Eric Wu**             | **Kevin Wu**             |
+| :---:         | :---:                  | :---:                   | :---:                    |
+| *Email*       | <cliu02@g.harvard.edu> | <eric_wu@g.harvard.edu> | <kevin_wu@g.harvard.edu> |
+| *Office*      | TBD                    | TBD                     | TBD                      |
+| *Office Hours*| TBD <br> TBD           | TBD <br> TBD            | TBD <br> TBD             |
 
 
 ## Meeting Times
@@ -74,7 +74,7 @@ After successful completion of this course, you will be able to:
 * Course GitHub Repo: <https://github.com/IACS-CS-207/cs207-F17/> 
   * You should clone this repo and update it before each class.
 * Your *private* GitHub Repo: `githubusername/cs207work`
-  * Should contain a HW directory and a labs directorty
+  * Should contain a HW directory and a labs directory
 * Canvas: <https://canvas.harvard.edu/courses/30141>
   * Used for course discussions and 
   * storing your course grade 
