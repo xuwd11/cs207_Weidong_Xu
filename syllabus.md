@@ -28,6 +28,21 @@ After successful completion of this course, you will be able to:
 
 ## Course Topics
 
+The primary goal of this course is to teach you how to develop effective software for scientific applications.  
+In order to achieve this goal, there are several non-negotiable topics that must be included in the course.  We 
+will focus on _System and Software Engineering_ and _Language_.  Morevoer, we aim to provide you with a suite of 
+modern software development techniques and workflows.  The following list includes topics that will be covered in 
+this course.  See the [Course Schedule](schedule.md) for details on how the topics fit together.
+
+* Version control
+* Python (basics)
+* How Python works
+* Software documentation
+* Software testing 
+* Object-oriented programming
+* Data structures 
+* Databases
+
 ## Lecture Attendance
 
 Lecture attendance is mandatory and essential.  A large portion of lecture time will be spent writing programs and
