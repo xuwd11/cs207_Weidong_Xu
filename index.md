@@ -2,22 +2,24 @@
 title: "CS 207: Systems Development for Computational Science"
 layout: "default"
 ---
-Welcome to CS207!  This site is being updated.  In the meantime, feel free to browse 
-the course information below and check out the tentative course schedule.  Check back 
-for new information! 
 
-<!--
-Computation has long been an important tool for scientists, but the past two decades 
-have seen a true revolution in the practice of science. Computation, in the form of 
-both simulation and analysis has joined theory and experimentation as the oft-quoted 
-“third pillar” of science.
+**Welcome to CS207!**
 
-This is an applications course highlighting the use of software engineering and computer 
+It is accpeted that computation has emerged as the third pillar of science alongside the 
+pillars of theory and experiment.  Computational science is maturing rapidly and has found 
+considerable and significant use in supporting scientists from various disciplines (including all 
+engineering disciplines, physics, chemistry, finance, biology, and data analysis to name 
+a few).  Many burgeoning scientists are still taught to write "a code" for some problem 
+and to debug when things look wrong.  Given the ever-increasing complexity of software 
+solutions to scientific problems, this old paradigm is no longer tenable.
+
+CS207 is an applications course highlighting the use of software engineering and computer 
 science in solving scientific problems. You will learn the fundamentals of developing 
 scientific software systems including abstract thinking, the handling of data, and 
 assessment of computational approaches: all in the context of good software engineering 
 practices.
 
+<!--
 You should take this class if you want to be a good programmer or programming-capable member 
 of your "company"'s data science team.
 
