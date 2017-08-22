@@ -27,3 +27,17 @@ Publisher: O'Reilly Media 2014
 - [Best Practices for Scientific Computing](http://iacs-courses.seas.harvard.edu/courses/cs207/resources/BestPratices.pdf)
 - [Python pep8](https://www.python.org/dev/peps/pep-0008/)
 - [An opinionated guide to python style](https://github.com/amontalenti/elements-of-python-style)
+
+## Git
+
+* [GitHub Videos and Training](https://www.youtube.com/user/github)
+* [GitHub Interactive Tutorial](https://try.github.io/levels/1/challenges/1)
+* [git - the simple guide](http://rogerdudler.github.io/git-guide/)
+* [Git Reference](https://git-scm.com/docs)
+* [Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [Git Immersion Tutorial](http://gitimmersion.com)
+
+## Python
+
+* [python](https://www.python.org/about/gettingstarted/)
+* [anaconda](https://www.continuum.io/anaconda-overview)
