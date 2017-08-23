@@ -54,7 +54,7 @@ Attendance at guest lectures is mandatory and will be checked by passing around 
 ## Textbooks
 
 There is no required course textbook.  However, the course content will draw from various sources.  We will cite the 
-source when appropriate.  Please consult the resources page for recommended textbooks and additional resources. 
+source when appropriate.  Please consult the [Resources Page](resources.md) for recommended textbooks and additional resources. 
 
 ## Assessment Procedure
 
