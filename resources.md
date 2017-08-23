@@ -9,7 +9,7 @@ No book is required. But we highly recommend two books for this course.
 
 - Fluent Python: Clear, Concise, and Effective Programming, by Luciano Ramalho.
 Publisher: O'Reilly Media. 2015.
-- Designing Data Intensive Applications, by http://dataintensive.net/, The Big Ideas Behind Reliable, Scalable, 
+- Designing Data Intensive Applications, by (http://dataintensive.net/), The Big Ideas Behind Reliable, Scalable, 
 and Maintainable Systems by Martin Kleppmann.
 Publisher: O'Reilly Media 2014
 
