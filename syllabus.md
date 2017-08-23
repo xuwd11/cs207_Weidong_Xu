@@ -58,8 +58,9 @@ source when appropriate.  Please consult the [Resources Page](resources.md) for 
 
 ## Assessment Procedure
 
-Refer to the Coursework page for specific details on the grading scheme for the homeworks and groupwork policies The 
-project page has a breakdown of the project.
+Refer to the Coursework page for specific details on the grading scheme for the homeworks and groupwork policies.
+
+The project page has a breakdown of the project.
 
 **Course Grade Breakdown**
 * Homework:  20%
@@ -75,7 +76,7 @@ can be found on the project page.
 
 ## Prerequisites
 
-Programming knowledge, **in Python** at the level of CS50 and CS 109 (or above). Besides this, you should 
+Programming knowledge **in Python** at the level of CS50 and CS 109 (or above). Besides this, you should 
 have interest or investment in scientific computing.
 
 ## Academic Integrity
