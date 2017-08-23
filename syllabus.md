@@ -81,6 +81,18 @@ have interest or investment in scientific computing.
 
 ## Academic Integrity
 
+You are welcome to discuss the course's material and homework with others in order to better understand it, 
+but the work you turn in must be your own unless collaboration is explicitly allowed. You may not submit the 
+same or similar work to this course that you have submitted or will submit to another. You must acknowledge 
+any source code that was not written by you by mentioning the original author(s) directly in your source code 
+(comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. 
+Do not remove any original copyright notices and headers. For more information please consult the Harvard academic 
+integrity guidelines: 
+[Academic Integrity and Academic Dishonesty](https://handbook.fas.harvard.edu/book/academic-integrity#two). All 
+forms of academic dishonesty will be forwarded to the Harvard College Administrative Board. 
+
+<!--_Adapted from text created by Chris Cecka_-->
+
 ## Special Accommodations
 
 If you have a documented disability (physical or cognitive) that may impair your ability to complete assignments 
@@ -92,4 +104,4 @@ a variety of accommodations and services to students with documented disabilitie
 [this webpage](www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility) for more 
 information.
 
-
+<!--_Adapted from text created by Rahul Dave_-->
