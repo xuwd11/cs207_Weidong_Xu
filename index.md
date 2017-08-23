@@ -52,11 +52,11 @@ After successful completion of this course, you will be able to:
 
 **TFs:**
 
-|               | **Charles Liu**                    | **Eric Wu**             | **Kevin Wu**             |
-| :---:         | :---:                              | :---:                   | :---:                    |
-| *Email*       | <cliu02@g.harvard.edu>             | <eric_wu@g.harvard.edu> | <kevin_wu@g.harvard.edu> |
-| *Office*      | Maxwell-Dworkin (1st floor tables) | TBD                     | TBD                      |
-| *Office Hours*| TBD <br> TBD                       | TBD <br> TBD            | TBD <br> TBD             |
+|               | **Charles Liu**                    | **Eric Wu**                        | **Kevin Wu**                       |
+| :---:         | :---:                              | :---:                              | :---:                              |
+| *Email*       | <cliu02@g.harvard.edu>             | <eric_wu@g.harvard.edu>            | <kevin_wu@g.harvard.edu>           |
+| *Office*      | Maxwell-Dworkin (1st floor tables) | Maxwell-Dworkin (1st floor tables) | Maxwell-Dworkin (1st floor tables) |
+| *Office Hours*| TBD <br> TBD                       | TBD <br> TBD                       | TBD <br> TBD                       |
 
 
 ## Meeting Times
