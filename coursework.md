@@ -10,6 +10,14 @@ and a final project.  Lectures, lecture exercises, and most homeworks will be
 provided through Jupyter notebooks.  Details on each course component can be 
 found below.  All course work will be hosted on your private GitHub repo.
 
+## Course Workflow
+
+All of your work will be hosted on your private GitHub repo.  It is critical 
+that you set up a private repo (free for students) and give the teaching staff 
+access.
+
+Your directory structure should be as follows:
+
 ## Lecture Format
 
 The lectures will be available no earlier than 30 minutes before the class starts. 
