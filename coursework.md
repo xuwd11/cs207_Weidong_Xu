@@ -43,4 +43,32 @@ The teaching staff will grade selected exercises and check for completeness.  Si
 the correct solution is presented in class, these are almost free points.  Please 
 complete the exercises!
 
+## Homework
+
+* Homework is worth 20% of your final grade.  
+* Your private GitHub repo should contain a `homeworks` directory with 
+  subdirectories for each homework assignment.
+* Name the assignment that you want us to grade `HWn-final` where `n` is the 
+  assignment number. **We will only grade appropriately-labeled assignments!**
+* New homework will be assigned on Monday and due on Sunday night at **11:59 PM**.
+* All assignments will involve programming.  
+* Not all problems will be graded, but you should still do each problem 
+  since you don't know which problems will be graded ahead of time.
+
+**Homework rules:**
+
+* Assignments must be completed individually
+* Collaboration is permitted as long as discussions are limited to high-level 
+  considerations.
+  * For example, do not discuss implementation details
+* Solutions _must_ be your own!
+
+**Late Policy**
+Late homework will not be accepted except in special cases.  Please contact me as 
+soon as possible in the case of an unforeseen emergency or illness so we can figure 
+out an approprate plan of action on a case by case basis.
+
+
+
+## A Note on Groups
 
