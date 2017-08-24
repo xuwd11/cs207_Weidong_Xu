@@ -97,3 +97,6 @@ out an approprate plan of action on a case by case basis.
 
 ## A Note on Groups
 
+You will be assigned a group at the beginning of the semester.  The group will have 
+3 or 4 members.  This is the group in which you will work on the in-class programming 
+assignments.  It will also be your project group.
