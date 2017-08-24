@@ -20,7 +20,7 @@ Your directory structure should be as follows:
 
 ## Grading Scale 
 
-Homework, lecture exercises and final project will be graded on a 10 point scale: 
+Homework, lecture exercises and the final project will be graded on a 10 point scale: 
 
 * 10 = Solid / no mistakes (or really minor ones)
 * 8 = Good / some mistakes
