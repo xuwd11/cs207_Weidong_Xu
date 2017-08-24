@@ -74,6 +74,13 @@ complete the exercises!
 * Not all problems will be graded, but you should still do each problem 
   since you don't know which problems will be graded ahead of time.
 
+**Homework Feed back:**
+
+The teaching staff will provide feedback on your homework.  You will receive a 
+pull request from the staff member who grades your assignment.  Once you approve 
+and merge the pull request, you will be able to see your grade and associated 
+comments.
+
 **Homework rules:**
 
 * Assignments must be completed individually
