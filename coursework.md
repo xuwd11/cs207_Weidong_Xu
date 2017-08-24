@@ -18,6 +18,17 @@ access.
 
 Your directory structure should be as follows:
 
+## Grading Scale 
+
+Homework, lecture exercises and final project will be graded on a 10 point scale: 
+
+* 10 = Solid / no mistakes (or really minor ones)
+* 8 = Good / some mistakes
+* 6 = Fair / some major conceptual errors
+* 4 = Poor / did not finish
+* 2 = Very Poor / little to no attempt.
+* 0 = Did not participate / did not hand in
+
 ## Lecture Format
 
 The lectures will be available no earlier than 30 minutes before the class starts. 
@@ -72,11 +83,10 @@ complete the exercises!
 * Solutions _must_ be your own!
 
 **Late Policy**
+
 Late homework will not be accepted except in special cases.  Please contact me as 
 soon as possible in the case of an unforeseen emergency or illness so we can figure 
 out an approprate plan of action on a case by case basis.
-
-
 
 ## A Note on Groups
 
