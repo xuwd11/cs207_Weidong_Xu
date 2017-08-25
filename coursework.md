@@ -30,7 +30,7 @@ see if you've submitted your work on time or not.
 
 The class project will be done in groups of 3 to 4.  You should create a GitHub 
 organization with your group members and teaching staff in it.  The organization 
-will be called `cs207_groupname` and the project repo should be called `project`.  
+will be called `cs207_groupname` and the project repo should be called `project`. 
 The group is free to make other repos within the organization for experiments, but 
 `project` is the one we will grade.
 
