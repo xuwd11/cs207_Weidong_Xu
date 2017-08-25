@@ -107,9 +107,7 @@ to identify, discuss, and document any feasible instructional modifications or a
 contact the Accessible Education Office to request an official letter outlining authorized accommodations. The 
 Extension School is committed to providing an accessible academic community. The Disability Services Office offers 
 a variety of accommodations and services to students with documented disabilities. Please visit 
-[this webpage](www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility) for more 
-information.
+[Accessibility and Student Services](www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility) 
+for more information.
 
 <!--_Adapted from text created by Rahul Dave_-->
-
-## Additional
