@@ -12,11 +12,27 @@ found below.  All course work will be hosted on your private GitHub repo.
 
 ## Course Workflow
 
-All of your work will be hosted on your private GitHub repo.  It is critical 
-that you set up a private repo (free for students) and give the teaching staff 
-access.
+All of your work (except for the class project) will be hosted on your private 
+GitHub repo named `githubusername/cs207work`.  This repo will be a clone of the 
+main course repo.  We will discuss how to set this up in the first lecture or two.  
 
-Your directory structure should be as follows:
+It is critical that you set up a private repo (free for students) and give the 
+teaching staff access.  There are two reasons for keeping this repo private.  One 
+is so that other students cannot see your work.  The other reason is because the 
+teaching staff will be providing comments and you may not want other students to 
+see these.
+
+When you arrive at each class, you should pull from the base course repo.  Make 
+sure you push all changes to your repo _before_ each deadline.  The teaching 
+staff will checkout your latest work, grade it, provide comments, and submit a 
+pull request for you to merge back into your private repo.  We will be able to 
+see if you've submitted your work on time or not.
+
+The class project will be done in groups of 3 to 4.  You should create a GitHub 
+organization with your group members and teaching staff in it.  The organization 
+will be called `cs207_groupname` and the project repo should be called `project`.  
+The group is free to make other repos within the organization for experiments, but 
+`project` is the one we will grade.
 
 ## Grading Scale 
 
