@@ -30,9 +30,9 @@ After successful completion of this course, you will be able to:
 
 The primary goal of this course is to teach you how to develop effective software for scientific applications. In 
 order to achieve this goal, there are several non-negotiable topics that must be included in the course.  We 
-will focus on _System and Software Engineering_ and _Language_.  Morevoer, we aim to provide you with a suite of 
-modern software development techniques and workflows.  The following list includes topics that will be covered in 
-this course.  See the [Course Schedule](schedule.md) for details on how the topics fit together.
+will be concerned with two primary thrusts:  _System and Software Engineering_ and _Language_.  Morevoer, we aim to 
+provide you with a suite of modern software development techniques and workflows.  The following list includes topics 
+that will be covered in this course.  See the [Course Schedule](schedule.md) for details on how the topics fit together.
 
 * Version control
 * Python (basics)
@@ -54,25 +54,31 @@ Attendance at guest lectures is mandatory and will be checked by passing around 
 ## Textbooks
 
 There is no required course textbook.  However, the course content will draw from various sources.  We will cite the 
-source when appropriate.  Please consult the [Resources Page](resources.md) for recommended textbooks and additional resources. 
+source when appropriate.  Please consult the [Resources Page](resources.md) for recommended textbooks and additional 
+resources. 
 
 ## Assessment Procedure
 
-Refer to the Coursework page for specific details on the grading scheme for the homeworks and groupwork policies.
+Refer to the [Coursework Page](coursework.md) for specific details on the grading scheme for the homeworks and 
+groupwork policies.
 
-The project page has a breakdown of the project.
+The [Project Page](project.md) has a breakdown of the project.
 
 **Course Grade Breakdown**
 * Homework:  20%
-* In-class Exercises:  20%
+* In-class Programming Exercises:  20%
 * Class participation:  10%
 * Project: 50%
+
+**Code**
+We expect you to write high-quality and readable, tested Python and C code. You should strive for doing things the 
+right way and think about aspects such as reusability, error handling, etc. We also expect you to document your code.
 
 ## Exams
 
 We will not have standard midterm or final exams.  Instead, we will have a midterm presentation on project 
 progress and a final project presentation during the scheduled final exam period.  Details on the project 
-can be found on the project page.
+can be found on the [Project Page](project.md).
 
 ## Prerequisites
 
@@ -105,3 +111,5 @@ a variety of accommodations and services to students with documented disabilitie
 information.
 
 <!--_Adapted from text created by Rahul Dave_-->
+
+## Additional
