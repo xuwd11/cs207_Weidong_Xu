@@ -23,7 +23,7 @@
 
 \usetheme[white]{Harvard}
 
-\author[]{David Sondak}
+\author[]{Instructor:  David Sondak \\ TFs:  Charles Liu, Eric Wu and Kevin Wu}
 \title{CS207: Systems Development for Computational Science}
 \subtitle{\url{https://iacs-cs-207.github.io/cs207-F17/}}
 
@@ -45,16 +45,6 @@
   
   \setcounter{framenumber}{0}
 
-  \begin{frame}{CS207 Objectives}
-    \begin{tcolorbox}[title=CS207 Objectives, arc is angular]
-        \centering
-        To give students who may not have a 
-        traditional computer science background the knowledge 
-        and tools to develop and maintain effective software 
-        for computational science applications.
-    \end{tcolorbox}
-  \end{frame}
-
   \begin{frame}{Motivation:  The Pillars of Science}
     \includegraphics<1>[width=\textwidth]{old_pillars.pdf}
     \includegraphics<2>[width=\textwidth]{new_pillars.pdf}
@@ -63,6 +53,37 @@
   \begin{frame}{Computational Science}
     \vspace{-0.8em}
     \input{venn.tex}
+  \end{frame}
+
+  \begin{frame}{Why take this class?}
+    \begin{columns}[T]
+      \begin{column}{0.7\textwidth}
+        \begin{itemize}
+          \item Scientific software is complex 
+          \item Your code needs to be:
+            \begin{itemize}
+              \item Reuseable 
+              \item Portable 
+              \item Robust
+            \end{itemize}
+          \item Must go beyond ``scripting'' \\[1.0em]
+        \end{itemize}
+        \vfill
+        \uncover<3->{
+        \begin{tcolorbox}[title=CS207 Objectives, arc is angular]
+            \centering
+            To give students who may not have a 
+            traditional computer science background the knowledge 
+            and tools to develop and maintain effective software 
+            for computational science applications.
+        \end{tcolorbox}
+        }
+      \end{column}
+      \begin{column}{0.3\textwidth}
+        \includegraphics<2->[width=\textwidth]{frustrated_coder.jpg} \hfill \\[1.0em]
+        \includegraphics<4->[width=\textwidth]{happy_coder.jpg}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   \begin{frame}{Who should take this class?}
@@ -85,34 +106,111 @@
     \end{itemize}
   \end{frame}
 
+  \begin{frame}{Sample Topics}
+    \uncover<1->{
+      A few selected topics to be covered:
+      \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+          \begin{itemize}
+            \item Version control
+            \item Python (basics)
+            \item How Python works
+            \item Software documentation
+          \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \begin{itemize}
+            \item Software testing
+            \item Object-oriented programming
+            \item Data structures
+            \item Databases
+          \end{itemize}
+        \end{column}
+      \end{columns}
+      \vfill
+    }
+    \uncover<2->{
+      \begin{columns}[b]
+        \begin{column}{0.5\textwidth}
+          Other potential topics \\ (not guaranteed):
+          \begin{itemize}
+            \item Debuggers and debugging
+            \item Build systems (Make files, autotools, ...)
+            \item Compiled languages
+            \item Navigating a Unix OS
+          \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=\textwidth]{bug.jpg}
+        \end{column}
+      \end{columns}
+    }
+  \end{frame}
+
   \begin{frame}{Course Structure}
     \begin{itemize}
       \item CS207 is an application-driven course \\[0.5em]
       \item Two, $1.5$ hour lectures per week \\[0.5em]
-      \item Lectures centered around group programming exercises using Jupyter notebooks\\[0.5em]
+      \item Lectures centered around group programming exercises using Jupyter notebooks  \\[0.5em]
       \item ``Weekly'' programming assignments for homework \\[0.5em]
       \item Primary deliverable is a software development project \\[0.5em]
       \item All course content hosted on GitHub
     \end{itemize}
+    \vfill
+    \centering
+    \Large Course Website:  \url{https://iacs-cs-207.github.io/cs207-F17/}
   \end{frame}
 
-  \begin{frame}{Sample Topics}
-    A few selected topics to be covered:
+  \begin{frame}{Course Project:  Overview}
     \begin{itemize}
-      \item Version control
-      \item Python (basics)
-      \item How Python works
-      \item Software documentation
-      \item Software testing
-      \item Object-oriented programming
-      \item Data structures
-      \item Databases
+      \item You will work in groups of $3$ to $4$ people (assigned by teaching staff) \\[0.75em]
+      \item You will add to your library throughout the semester \\[0.75em]
+      \item You will demo your progress for a midterm presentation  \\[0.25em]
+        \begin{itemize}
+          \item Includes a proposal of your final project \\[0.75em]
+        \end{itemize}
+      \item For the final project, you will add a non-trivial feature to your library \\[0.75em]
+      \item A portion of your grade will come from peer-assessment \\[0.75em]
+      \item Exact details on website
     \end{itemize}
   \end{frame}
 
-  \begin{frame}[plain]
-    \centering
-    \Large Course Website:  \url{https://iacs-cs-207.github.io/cs207-F17/}
+  \begin{frame}{Course Project:  The Topic}
+    \begin{itemize}
+      \item We will write a chemical kinetics library!
+    \end{itemize}
+    \begin{columns}[c]
+      \begin{column}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{combustion.png} \hfill \\
+        \tiny Combustion Kinetics Course, Technische Universitat Berlin
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{PEM_fuel_cell.png} \hfill \\
+        \tiny \url{https://commons.wikimedia.org/wiki/File:Proton_Exchange_Fuel_Cell_Diagram.svg}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}{Course Project:  Why Kinetics???}
+    \begin{itemize}
+      \item The mathematics is accessible
+      \begin{align*}
+        \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t} = 
+          \underbrace{\textcolor{HCrimson}{\mathbf{f}\left(\mathbf{x}, T\right)}}_{\textrm{return this}}
+      \end{align*}
+      \item Very popular area of study \\[0.25em]
+        \begin{itemize}
+          \item Examples in physics, engineering, machine learning, and data science \\[1.0em]
+        \end{itemize}
+      \item Good, clean, non-trivial example for illustration of software development principles \\[1.0em]
+    \end{itemize}
+    \begin{tcolorbox}[title=Important Note on Expectations, arc is angular]
+        \centering
+        You are not responsible for becoming an expert in chemical kinetics!  You will note be tested 
+        on your kinetics proficiency.
+    \end{tcolorbox}
   \end{frame}
 
 \end{document}
