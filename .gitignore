@@ -26,4 +26,6 @@
 *.mtc
 *.mtc1
 *.out
+*.nav
+*.snm
 *.synctex.gz
