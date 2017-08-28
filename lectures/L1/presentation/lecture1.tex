@@ -1,0 +1,118 @@
+\documentclass[onlymath, nologo]{beamer}
+
+\usepackage{amsmath, amsfonts}
+\usepackage{tikz}
+\usepackage{tabulary}
+\usepackage{array}
+{\renewcommand{\arraystretch}{2}%
+\usepackage{mathtools}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\usepackage{multimedia}
+\usepackage[theorems, skins]{tcolorbox}
+
+\graphicspath{{../figs/}}
+
+\definecolor{UTBlue}{RGB}{94,156,174}
+\definecolor{HCrimson}{RGB}{165,28,48}
+\definecolor{HInk}{RGB}{30,30,30}
+\definecolor{HMortar}{RGB}{140,129,121}
+\definecolor{HParchment}{RGB}{243,243,241}
+\definecolor{HSlate}{RGB}{137,150,160}
+\definecolor{HShade}{RGB}{186,197,198}
+\tcbset{colback=HParchment,colframe=HCrimson}
+
+\usetheme[white]{Harvard}
+
+\author[]{David Sondak}
+\title{CS207: Systems Development for Computational Science}
+\subtitle{\url{https://iacs-cs-207.github.io/cs207-F17/}}
+
+\institute{Harvard University \\ 
+           Institute for Applied Computational Science}
+\date{\large 8/30/2017}
+
+\begin{document}
+
+\bgroup
+\makeatletter
+\setbeamertemplate{footline}{}
+\makeatother
+
+  \begin{frame}
+    \titlepage
+  \end{frame}
+  \egroup
+  
+  \setcounter{framenumber}{0}
+
+  \begin{frame}{CS207 Objectives}
+    \begin{tcolorbox}[title=CS207 Objectives, arc is angular]
+        \centering
+        To give students who may not have a 
+        traditional computer science background the knowledge 
+        and tools to develop and maintain effective software 
+        for computational science applications.
+    \end{tcolorbox}
+  \end{frame}
+
+  \begin{frame}{Motivation:  The Pillars of Science}
+    \includegraphics<1>[width=\textwidth]{old_pillars.pdf}
+    \includegraphics<2>[width=\textwidth]{new_pillars.pdf}
+  \end{frame}
+
+  \begin{frame}{Computational Science}
+    \vspace{-0.8em}
+    \input{venn.tex}
+  \end{frame}
+
+  \begin{frame}{Who should take this class?}
+    \begin{itemize}
+      \item Any kind of scientist is welcome to take this class! \\[1.0em]
+      \item This course is computer science for people who aren't computer scientists:
+      \begin{itemize}
+        \item Data scientists
+        \item Biologists
+        \item Chemists
+        \item Engineers 
+        \item Physicists
+        \item Mathematicians
+        \item Economists
+        \item \hspace{2.0em} \vdots %\\[1.0em]
+      \end{itemize}
+      \item It is also for computer scientists who want to develop scientific software \\[1.0em]
+      \item CS207 is for students who need to know effective and modern software practices for 
+            their career
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Course Structure}
+    \begin{itemize}
+      \item CS207 is an application-driven course \\[0.5em]
+      \item Two, $1.5$ hour lectures per week \\[0.5em]
+      \item Lectures centered around group programming exercises using Jupyter notebooks\\[0.5em]
+      \item ``Weekly'' programming assignments for homework \\[0.5em]
+      \item Primary deliverable is a software development project \\[0.5em]
+      \item All course content hosted on GitHub
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Sample Topics}
+    A few selected topics to be covered:
+    \begin{itemize}
+      \item Version control
+      \item Python (basics)
+      \item How Python works
+      \item Software documentation
+      \item Software testing
+      \item Object-oriented programming
+      \item Data structures
+      \item Databases
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}[plain]
+    \centering
+    \Large Course Website:  \url{https://iacs-cs-207.github.io/cs207-F17/}
+  \end{frame}
+
+\end{document}

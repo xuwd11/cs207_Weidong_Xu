@@ -1,0 +1,61 @@
+\ProvidesPackage{beamercolorthemeHarvardWhite}
+% Adapted from the default crane style
+
+\mode<presentation>
+
+\definecolor{EmphColor}{RGB}{153,1,0}
+\definecolor{HighlightBackground}{RGB}{255,255,0}
+\definecolor{KeywordColor}{RGB}{0,0,95}
+
+% Color definitions
+\definecolor{UTBlue}{RGB}{94,156,174}
+\definecolor{UTGrey}{RGB}{51,63,72}
+\definecolor{HCrimson}{RGB}{165,28,48}
+\definecolor{HInk}{RGB}{30,30,30}
+\definecolor{HMortar}{RGB}{140,129,121}
+\definecolor{HParchment}{RGB}{243,243,241}
+\definecolor{HSlate}{RGB}{137,150,160}
+\definecolor{HShade}{RGB}{186,197,198}
+
+\setbeamercolor*{section text}{fg=HParchment}
+
+\setbeamercolor{item projected}{bg=HInk}
+\setbeamercolor{itemize item}{fg=HMortar}
+\setbeamercolor{itemize subitem}{fg=HSlate}
+\setbeamercolor{description item}{fg=HInk}
+\setbeamercolor{enumerate item}{fg=HMortar}
+\setbeamercolor{enumerate subitem}{fg=HSlate}
+
+
+\setbeamercolor{palette primary}{fg=HParchment,bg=HInk}
+\setbeamercolor{palette secondary}{fg=HParchment,bg=HCrimson}
+
+% This green is just so that I can figure out when, if ever, this
+% is used.  If it is a useful palette, it should be changed to something
+% else.  Let me know if you figure out what uses these.
+\setbeamercolor{palette tertiary}{fg=HParchment,bg=HMortar}
+\setbeamercolor{palette quaternary}{fg=HParchment,bg=HShade}
+
+\setbeamercolor{titlelike}{parent=palette secondary}
+
+\setbeamercolor{block title}{parent=palette secondary}
+\setbeamercolor{block title alerted}{use=alerted text,fg=green,bg=alerted text.fg}
+\setbeamercolor{block title example}{use=example text,fg=green,bg=example text.fg}
+
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=HShade}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=HShade}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=HShade}
+
+% This ends up applying to most navigation-related things
+\setbeamercolor{sidebar}{bg=HMortar}
+
+\setbeamercolor{palette sidebar primary}{fg=HParchment}
+\setbeamercolor{palette sidebar secondary}{fg=HMortar}
+
+\setbeamercolor*{separation line}{bg=HMortar}
+\setbeamercolor*{fine separation line}{bg=HMortar}
+
+
+\mode
+<all>
