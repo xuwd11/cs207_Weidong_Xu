@@ -71,7 +71,7 @@ The [Project Page](project.md) has a breakdown of the project.
 * Project: 50%
 
 **Code**
-We expect you to write high-quality and readable, tested Python and C code. You should strive for doing things the 
+We expect you to write high-quality and readable, tested Python code. You should strive for doing things the 
 right way and think about aspects such as reusability, error handling, etc. We also expect you to document your code.
 
 ## Exams
