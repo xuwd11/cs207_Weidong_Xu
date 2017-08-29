@@ -17,9 +17,11 @@ Publisher: O'Reilly Media 2014
 
 - The Practice of Programming (ISBN 0-201-61586-X) by Brian W. Kernighan and Rob Pike, Addison-Wesley, 1999.
 - Skiena: The Algorithm Design Manual
-- Abelson, Sussmann and Sussmann: SICP and python based online version based on it: http://composingprograms.com/
+- Abelson, Sussmann and Sussmann: SICP and python based online version based on it: 
+  [http://composingprograms.com/](http://composingprograms.com/)
 - High Performance Python: By Micha Gorelick, Ian Ozsvald. Oreilly Media 2014.
-- Hacker guide to python testing sample chapter (book's pretty good too) (https://julien.danjou.info/media/the-hacker-guide-to-python-sample.pdf)
+- Hacker guide to python testing sample chapter (book's pretty good too) 
+  [https://julien.danjou.info/media/the-hacker-guide-to-python-sample.pdf](https://julien.danjou.info/media/the-hacker-guide-to-python-sample.pdf)
 
 
 ## Papers and other readings
