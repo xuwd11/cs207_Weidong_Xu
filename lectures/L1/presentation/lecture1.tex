@@ -46,8 +46,9 @@
   \setcounter{framenumber}{0}
 
   \begin{frame}{Motivation:  The Pillars of Science}
-    \includegraphics<1>[width=\textwidth]{old_pillars.pdf}
-    \includegraphics<2>[width=\textwidth]{new_pillars.pdf}
+    \centering
+    \includegraphics<1>[width=0.65\textwidth]{old_pillars.pdf}
+    \includegraphics<2>[width=0.65\textwidth]{new_pillars.pdf}
   \end{frame}
 
   \begin{frame}{Computational Science}
@@ -141,7 +142,7 @@
           \end{itemize}
         \end{column}
         \begin{column}{0.5\textwidth}
-          \includegraphics[width=\textwidth]{bug.jpg}
+          \href{https://en.wikipedia.org/wiki/Software_bug}{\includegraphics[width=\textwidth]{bug.jpg}}
         \end{column}
       \end{columns}
     }
@@ -176,34 +177,38 @@
   \end{frame}
 
   \begin{frame}{Course Project:  The Topic}
+    \uncover<1->{
     \begin{itemize}
-      \item We will write a chemical kinetics library!
+      \item<1-> We will write a chemical kinetics library!
     \end{itemize}
+    }
+    \uncover<2->{
     \begin{columns}[c]
       \begin{column}{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{combustion.png} \hfill \\
-        \tiny Combustion Kinetics Course, Technische Universitat Berlin
+        \uncover<2->{\includegraphics[width=\textwidth]{combustion.png} \hfill \\}
+        \uncover<2->{\tiny Combustion Kinetics Course, Technische Universitat Berlin}
       \end{column}
       \begin{column}{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{PEM_fuel_cell.png} \hfill \\
-        \tiny \url{https://commons.wikimedia.org/wiki/File:Proton_Exchange_Fuel_Cell_Diagram.svg}
+        \uncover<3->{\includegraphics[width=\textwidth]{PEM_fuel_cell.png} \hfill \\}
+        \uncover<3->{\tiny \url{https://commons.wikimedia.org/wiki/File:Proton_Exchange_Fuel_Cell_Diagram.svg}}
       \end{column}
     \end{columns}
+    }
   \end{frame}
 
   \begin{frame}{Course Project:  Why Kinetics???}
     \begin{itemize}
-      \item The mathematics is accessible
-      \begin{align*}
-        \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t} = 
-          \underbrace{\textcolor{HCrimson}{\mathbf{f}\left(\mathbf{x}, T\right)}}_{\textrm{return this}}
-      \end{align*}
       \item Very popular area of study \\[0.25em]
         \begin{itemize}
           \item Examples in physics, engineering, machine learning, and data science \\[1.0em]
         \end{itemize}
+      \item The mathematics is accessible
+      \begin{align*}
+        \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t} = 
+          \underbrace{\textcolor{HCrimson}{\mathbf{f}\left(\mathbf{x}\right)}}_{\textrm{return this}}
+      \end{align*}
       \item Good, clean, non-trivial example for illustration of software development principles \\[1.0em]
     \end{itemize}
     \begin{tcolorbox}[title=Important Note on Expectations, arc is angular]
