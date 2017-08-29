@@ -72,7 +72,7 @@ these exercises during lecture:
   the class to present their solution.
 
 **Students _must_ push their final solution to the exercises to their private repo 
-  by 11:59 PM on the day of the lecture**
+  by 5:00 PM on the day of the lecture**
 
 The teaching staff will grade selected exercises and check for completeness.  Since 
 the correct solution is presented in class, these are almost free points.  Please 
@@ -110,6 +110,8 @@ comments.
 Late homework will not be accepted except in special cases.  Please contact me as 
 soon as possible in the case of an unforeseen emergency or illness so we can figure 
 out an approprate plan of action on a case by case basis.
+
+The lowest homework grade will be dropped.
 
 ## A Note on Groups
 
