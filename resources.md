@@ -20,8 +20,7 @@ Publisher: O'Reilly Media 2014
 - Abelson, Sussmann and Sussmann: SICP and python based online version based on it: 
   [http://composingprograms.com/](http://composingprograms.com/)
 - High Performance Python: By Micha Gorelick, Ian Ozsvald. Oreilly Media 2014.
-- Hacker guide to python testing sample chapter (book's pretty good too) 
-  [https://julien.danjou.info/media/the-hacker-guide-to-python-sample.pdf](https://julien.danjou.info/media/the-hacker-guide-to-python-sample.pdf)
+- Hacker guide to Python [https://thehackerguidetopython.com](https://thehackerguidetopython.com)
 
 
 ## Papers and other readings
