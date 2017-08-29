@@ -8,6 +8,7 @@
 \usepackage{mathtools}
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
 \usepackage{multimedia}
+\usepackage[version=4]{mhchem}
 \usepackage[theorems, skins]{tcolorbox}
 
 \graphicspath{{../figs/}}
@@ -205,10 +206,21 @@
           \item Examples in physics, engineering, machine learning, and data science \\[1.0em]
         \end{itemize}
       \item The mathematics is accessible
-      \begin{align*}
-        \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t} = 
-          \underbrace{\textcolor{HCrimson}{\mathbf{f}\left(\mathbf{x}\right)}}_{\textrm{return this}}
-      \end{align*}
+      \begin{columns}{c}
+        \begin{column}{0.5\textwidth}
+          \begin{align*}
+            \ce{H2} + \ce{O2} \ce{<=>[k1]} \ce{H2O} + \ce{O} \\
+            %\ce{H} + \ce{OH} \ce{<=>} \ce{H2} + \ce{O} \\
+            \ce{H2} + \ce{O2} + \ce{M} \ce{<=>[k2]} \ce{H2O2} + \ce{M} 
+          \end{align*}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \begin{align*}
+            \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t} = 
+              \underbrace{\textcolor{HCrimson}{\mathbf{f}\left(\mathbf{x}\right)}}_{\textrm{return this}}
+          \end{align*}
+        \end{column}
+      \end{columns}
       \item Good, clean, non-trivial example for illustration of software development principles \\[1.0em]
     \end{itemize}
     \begin{tcolorbox}[title=Important Note on Expectations, arc is angular]
