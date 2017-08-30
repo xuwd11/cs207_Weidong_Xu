@@ -117,6 +117,8 @@ accepted after Wednesday.
 Please contact me as soon as possible in the case of an unforeseen emergency or 
 illness so we can figure out an approprate plan of action on a case by case basis.
 
+The lowest homework grade will be dropped.
+
 ## A Note on Groups
 
 You will be assigned a group at the beginning of the semester.  The group will have 
