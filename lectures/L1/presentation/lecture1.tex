@@ -274,4 +274,86 @@
     \end{tcolorbox}
   \end{frame}
 
+  \begin{frame}{Set up GitHub and get the course repository}
+    \begin{itemize}
+      \item If you don't already have a GitHub account, go to \url{https://github.com/} and create an account. 
+      \item From your GitHub homepage, find the \textcolor{green!75!black}{\textbf{New Repository}} button:
+        \begin{enumerate}
+          \item Click the \textcolor{green!75!black}{\textbf{New Repository}} button. 
+          \item Name the repository \texttt{cs207\_firstname\_lastname}.
+          \item Select \textbf{Private} for the repository type.
+          \item \textbf{Do not}:
+            \begin{itemize}
+              \item initialize with a README, 
+              \item add a \texttt{.gitignore} file, 
+              \item or choose a license.
+            \end{itemize}
+          \item Select \texttt{Create Repository} 
+          \item You will see four options.  Choose the one at the bottom of the page: 
+                ``...or import code from another repository'' and click the \texttt{Import code} button.
+          \item Enter https://github.com/IACS-CS-207/cs207-F17.git in the text field under 
+                \texttt{Your old repository's clone URL}.
+          \item Click the \textcolor{green!75!black}{\textbf{Create Repository}} button.
+        \end{enumerate}
+      \item Congrats!  You now have the course repo!
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Connecting to the main course repo (1)}
+    You now have all the course content as it currently stands.  The problem is, you can't update it! \\[1.0em]
+
+    We will be doing most of our work from the command line. \\[-1.0em]
+
+    \begin{columns}[T]
+      \begin{column}{0.5\textwidth}
+        \begin{center}
+          \textbf{Mac and Linux Instructions}
+        \end{center}
+        \vspace{-1.0em}
+        \begin{itemize}
+          \item Open \texttt{Terminal}.
+          \item Type \texttt{which git}.  If git is installed, you will see a path to git similar to \texttt{/usr/bin/git}.
+          \item If git is not installed, then you won't see anything.  Follow the instructions here to install it: 
+                \url{https://git-scm.com/book/en/v2/Getting-Started-Installing-Git}.
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \begin{center}
+          \textbf{Windows} \\[1.0em]
+          You should install \texttt{git BASH}:  \url{https://git-for-windows.github.io}
+        \end{center}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}{Connecting to the main course repo (2)}
+    \begin{itemize}
+      \item Okay.  Now you have git.
+      \item Hopefully you still have your new GitHub repo open.  If not, open it.
+      \item Click the \texttt{Clone or download} button and copy the next. 
+      \item Open your terminal session (or git-BASH session). 
+      \item Type \texttt{git clone url\_to\_repo\_just\_copied}. 
+      \item Now you have a local copy of your repo!!
+    \end{itemize}
+    But how do you link your repo to the main course repo?
+  \end{frame}
+
+  \begin{frame}{Connecting to the main course repo (3)}
+    \begin{itemize}
+      \item Inside your local repo, type \texttt{git remote -v}.  This tells you 
+            the remote repos that are known to you.
+      \item You want to add a new remote repo (the main course repo). 
+      \item Type \texttt{git add remote upstream https://github.com/IACS-CS-207/cs207-F17.git} 
+      \item Now type \texttt{git remote -v}.  See the new repo?  It's short name is upstream. 
+      \item If you want to get updates from the main course repo, just type \texttt{git pull upstream master}.
+            Try it!
+      \item That command says to fetch and merge changes from the master branch of the repo 
+            pointed to by upstream.
+      \item Notice that everything is up to date. 
+    \end{itemize}
+    Now you have the main course repo on your GitHub page and you know how to get updates from the 
+    main repo. \\[0.5em]
+    Next time, we'll start to delve into the details of exactly what this all means.
+  \end{frame}
+
 \end{document}
