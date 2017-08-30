@@ -51,6 +51,8 @@ exercises.
 
 Attendance at guest lectures is mandatory and will be checked by passing around sign-in sheets.
 
+*You must bring your laptop to lecture.*  See me if you do not have a laptop.
+
 ## Textbooks
 
 There is no required course textbook.  However, the course content will draw from various sources.  We will cite the 
