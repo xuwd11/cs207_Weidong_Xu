@@ -51,7 +51,7 @@ exercises.
 
 Attendance at guest lectures is mandatory and will be checked by passing around sign-in sheets.
 
-*You must bring your laptop to lecture.*  See me if you do not have a laptop.
+**You must bring your laptop to lecture.**  See me if you do not have a laptop.
 
 ## Textbooks
 
