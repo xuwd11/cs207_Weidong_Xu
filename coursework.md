@@ -80,6 +80,10 @@ complete the exercises!
 
 ## Homework
 
+Homework will be made available on Monday and is due the following Sunday 
+at 11:59 PM.  Some assignments may be more involved than others.  In 
+such cases, the homework will be due the following Sunday (still at 11:59 PM).
+
 * Homework is worth 20% of your final grade.  
 * Your private GitHub repo should contain a `homeworks` directory with 
   subdirectories for each homework assignment.
@@ -90,7 +94,7 @@ complete the exercises!
 * Not all problems will be graded, but you should still do each problem 
   since you don't know which problems will be graded ahead of time.
 
-**Homework Feed back:**
+**Homework Feedback:**
 
 The teaching staff will provide feedback on your homework.  You will receive a 
 pull request from the staff member who grades your assignment.  Once you approve 
@@ -107,11 +111,11 @@ comments.
 
 **Late Policy**
 
-Late homework will not be accepted except in special cases.  Please contact me as 
-soon as possible in the case of an unforeseen emergency or illness so we can figure 
-out an approprate plan of action on a case by case basis.
+Two points will be deducted per day for late homework.  Homework will not be 
+accepted after Wednesday.  
 
-The lowest homework grade will be dropped.
+Please contact me as soon as possible in the case of an unforeseen emergency or 
+illness so we can figure out an approprate plan of action on a case by case basis.
 
 ## A Note on Groups
 
