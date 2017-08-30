@@ -3,14 +3,12 @@ title: Schedule
 layout: default
 ---
 
-**This is a tentative course schedule.  It is subject to change.**
-
 | Week  | Topics                                                        | Weekday               | Date             | Lectures                                                   |
 | :---: | :---:                                                         | :---:                 | :---:            | :---:                                                      |
 | 1     | Introduction, version control                                 | Monday <br> Wednesday | 8/28 <br> 8/30   | **No Class** <br> L1 |
-| 2     | git, chemical kinetics                                        | Monday <br> Wednesday | 9/4 <br> 9/6     | **No Class  Labor Day** <br> L2                            |
-| 3     | chemical kinetics, Python                                     | Monday <br> Wednesday | 9/11 <br> 9/13   | L3 <br> L4                                                 |
-| 4     | Python, documentation, testing                                | Monday <br> Wednesday | 9/18 <br> 9/20   | L5 <br> L6                                                 |
+| 2     | git, Python                                                   | Monday <br> Wednesday | 9/4 <br> 9/6     | **No Class  Labor Day** <br> L2                            |
+| 3     | Python                                                        | Monday <br> Wednesday | 9/11 <br> 9/13   | L3 <br> L4                                                 |
+| 4     | Python, documentation, testing, chemical kinetics             | Monday <br> Wednesday | 9/18 <br> 9/20   | L5 <br> L6                                                 |
 | 5     | More kinetics, input parsing (XML)                            | Monday <br> Wednesday | 9/25 <br> 9/27   | L7 <br> L8                                                 |
 | 6     | OOP                                                           | Monday <br> Wednesday | 10/2 <br> 10/4   | L9 <br> L10                                                |
 | 7     | OOP, Datastructures                                           | Monday <br> Wednesday | 10/9 <br> 10/11  | **No Class:  Columbus Day** <br> L11                       |
