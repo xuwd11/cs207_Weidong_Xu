@@ -46,6 +46,50 @@
   
   \setcounter{framenumber}{0}
 
+  \begin{frame}{Motivation:  Thermal Convection and the Geodynamo}
+    \uncover<1->{
+        {\centering \textbf{\textcolor{HCrimson}{Thermal convection drives most fluid flows in the universe}} \\[0.5em]}
+    }
+    \uncover<2->{
+    \begin{columns}[T]
+      \begin{column}{0.6\textwidth}
+        \uncover<2->{
+        \centering
+        \begin{tikzpicture}
+          \draw[ultra thick, blue!75!black] (0,2.5) -- (5,2.5);
+          \draw[ultra thick, red!75!black]  (0,0) -- (5,0);
+          \draw (2.5,2.5) node [blue!75!black, below] {COLD};
+          \draw (2.5,0.0) node [red!75!black, above] {HOT};
+          \draw[ultra thick, green!50!black, ->] (2.5, 1.75) -- (2.5, 1.0) node [below] {$\textcolor{green!25!black}{g}$};
+        \end{tikzpicture}
+        \\[1.0em]
+        Cold fluid falls, hot fluid rises \\[0.5em]
+        \href{https://www.youtube.com/watch?v=ryrXAGY1dmE}{\beamergotobutton{Plate Tectonics Video}}
+        }
+      \end{column}
+      \begin{column}{0.4\textwidth}
+        \uncover<3->{
+        \centering
+        \includegraphics[width=0.75\textwidth]{geodynamo.jpg} \\[-0.1em]
+        {\tiny \href{http://www.desy.de/news/news_search/index_eng.html?openDirectAnchor=1047}{DESY}}
+        }
+      \end{column}
+    \end{columns}
+    \vspace{-0.25em}
+    }
+    \uncover<4->{
+    \begin{align*}
+      \tcboxmath{\frac{\partial T}{\partial \mathrm{t}} + \nabla\cdot\left(\mathbf{u}T\right) = k\nabla^{2}T} %\quad 
+      %\tag*{\movie[externalviewer]{\textcolor{blue!75!black}{\small \textbf{Convection Movie}}}{TC.ogv}}
+    \end{align*}
+    \vspace{-0.25em}
+    \begin{itemize}
+      \item Ignoring $\displaystyle \nabla\cdot\left(\mathbf{u}T\right)$ gives the usual heat conduction equation! %\\[0.5em]
+      %\item In general, the full equation is impossible to solve analytically
+    \end{itemize}
+    }
+  \end{frame}
+
   \begin{frame}{Motivation:  The Pillars of Science}
     \centering
     \includegraphics<1>[width=0.65\textwidth]{old_pillars.pdf}
