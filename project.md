@@ -28,6 +28,8 @@ want to use it as the righ-hand-side of the ODE, or they might want to use it
 in a neural net code to learn new reaction pathways.  Those details don't 
 matter to you at the moment. 
 
+<img src="https://rawgit.com/IACS-CS-207/cs207-F17/gh-pages/svgs/42c65df43828c7cba2df2682a5cf2282.svg?invert_in_darkmode" align=middle width=70.18555500000001pt height=28.926479999999973pt/>
+
 Of course, there are details in the right-hand-side function and we will 
 cover these as needed.  **Note:  You are not expected to become and expert 
 in chemical kinetics!  You will not be assessed on your chemical kinetics 
