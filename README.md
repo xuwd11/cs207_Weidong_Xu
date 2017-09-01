@@ -1,1 +1,1 @@
-# cs207-F17
+# CS207 Course Repository for David Sondak 
