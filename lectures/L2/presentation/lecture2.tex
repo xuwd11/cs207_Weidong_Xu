@@ -1,0 +1,49 @@
+\documentclass[onlymath, nologo]{beamer}
+
+\usepackage{amsmath, amsfonts}
+\usepackage{tikz}
+\usepackage{tabulary}
+\usepackage{array}
+{\renewcommand{\arraystretch}{2}%
+\usepackage{mathtools}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\usepackage{multimedia}
+\usepackage[version=4]{mhchem}
+\usepackage[theorems, skins]{tcolorbox}
+
+\graphicspath{{../figs/}}
+
+\definecolor{UTBlue}{RGB}{94,156,174}
+\definecolor{HCrimson}{RGB}{165,28,48}
+\definecolor{HInk}{RGB}{30,30,30}
+\definecolor{HMortar}{RGB}{140,129,121}
+\definecolor{HParchment}{RGB}{243,243,241}
+\definecolor{HSlate}{RGB}{137,150,160}
+\definecolor{HShade}{RGB}{186,197,198}
+\tcbset{colback=HParchment,colframe=HCrimson}
+
+\usetheme[white]{Harvard}
+
+\author[]{Instructor:  David Sondak \\ TFs:  Charles Liu, Eric Wu and Kevin Wu}
+\title{CS207: Systems Development for Computational Science}
+\subtitle{Version Control:  Big ideas and \texttt{git}}
+
+\institute{Harvard University \\ 
+           Institute for Applied Computational Science}
+\date{\today}
+
+\begin{document}
+
+\bgroup
+\makeatletter
+\setbeamertemplate{footline}{}
+\makeatother
+
+  \begin{frame}
+    \titlepage
+  \end{frame}
+  \egroup
+  
+  \setcounter{framenumber}{0}
+
+\end{document}
