@@ -13,7 +13,7 @@ found below.  All course work will be hosted on your private GitHub repo.
 ## Course Workflow
 
 All of your work (except for the class project) will be hosted on your private 
-GitHub repo named `githubusername/cs207work`.  This repo will be a clone of the 
+GitHub repo named `githubusername/cs207_firstname_lastname`.  This repo will be a clone of the 
 main course repo.  We will discuss how to set this up in the first lecture or two.  
 
 It is critical that you set up a private repo (free for students) and give the 
