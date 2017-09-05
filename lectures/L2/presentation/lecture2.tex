@@ -60,10 +60,24 @@
     Chris Simmons at UT-Austin in his course \textit{Tools and Techniques of Computational Science}. \\[1.0em]
     The topics for today are:
     \begin{itemize}
+      \item Lecture workflow
       \item Version Control --- Big picture 
       \item Types of version control 
       \item \texttt{Git}
     \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Lecture Workflow}
+    At the beginning of each lecture, do the following:
+    \begin{enumerate}
+      \item Open a terminal 
+      \item \texttt{cd cs207\_firstname\_lastname}
+      \item \texttt{git pull upstream master} 
+      \item \texttt{git add .} 
+      \item \texttt{git commit -m "Updated cs207 notes for Lecture n" files\_to\_add}
+      \item \texttt{git push}
+    \end{enumerate}
+    We need to talk about all of this ($\Uparrow$): why we do it and what it means.
   \end{frame}
 
   \begin{frame}{The Multiple Roles of a Computational Scientist}
