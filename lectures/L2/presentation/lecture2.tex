@@ -134,15 +134,7 @@
         \item Git --- \url{https://git-scm.com/} \tikzmark{topbraceD}
         \item Mercurial --- \url{https://www.mercurial-scm.org/} \tikzmark{bottombraceD} \tikzmark{rightD}
       \end{itemize}
-      %\begin{tikzpicture}[overlay, remember picture]
-      %  \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
-      %        let \p1=(topbrace), \p2=(bottombrace) in
-      %        ({max(\x1,\x2)}, {\y1+0.8em}) -- node[right=0.6em] {I'd like some text here} ({max(\x1,\x2)}, {\y2});
-      %\end{tikzpicture}
-      %\begin{tikzpicture}[overlay, remember picture]
-      %  \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,gray]
-      %        ($(right)!(topbrace.north)!($(right)-(0,1)$)$) --  ($(right)!(bottombrace.south)!($(right)-(0,1)$)$);
-      %\end{tikzpicture}
+      % From https://tex.stackexchange.com/questions/12391/large-braces-over-several-items-in-an-itemize-with-text-by-the-brace
       \begin{tikzpicture}[overlay, remember picture]
         \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,gray]
               ($(rightC)!(topbraceC.north)!($(rightC)-(0,1)$) + (0,0.8em)$) --  node[right=0.6em] {Centralized} ($(rightC)!(bottombraceC.south)!($(rightC)-(0,1)$)$);
