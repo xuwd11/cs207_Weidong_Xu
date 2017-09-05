@@ -2,6 +2,7 @@
 
 \usepackage{amsmath, amsfonts}
 \usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc}
 \usepackage{tabulary}
 \usepackage{array}
 {\renewcommand{\arraystretch}{2}%
@@ -10,6 +11,14 @@
 \usepackage{multimedia}
 \usepackage[version=4]{mhchem}
 \usepackage[theorems, skins]{tcolorbox}
+% The following three lines are used to split an enumerate
+% across columns.
+\newcounter{savedenum}
+\newcommand*{\saveenum}{\setcounter{savedenum}{\theenumi}}
+\newcommand*{\resume}{\setcounter{enumi}{\thesavedenum}}
+
+% For getting a brace to span items in an itemize environment
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
 
 \graphicspath{{../figs/}}
 
@@ -26,7 +35,7 @@
 
 \author[]{Instructor:  David Sondak \\ TFs:  Charles Liu, Eric Wu and Kevin Wu}
 \title{CS207: Systems Development for Computational Science}
-\subtitle{Version Control:  Big ideas and \texttt{git}}
+\subtitle{Version Control:  Big ideas and \texttt{Git}}
 
 \institute{Harvard University \\ 
            Institute for Applied Computational Science}
@@ -45,5 +54,184 @@
   \egroup
   
   \setcounter{framenumber}{0}
+
+  \begin{frame}{Today's Plan}
+    A large portion of today's lecture is based upon a version control lecture given by 
+    Chris Simmons at UT-Austin in his course \textit{Tools and Techniques of Computational Science}. \\[1.0em]
+    The topics for today are:
+    \begin{itemize}
+      \item Version Control --- Big picture 
+      \item Types of version control 
+      \item \texttt{Git}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{The Multiple Roles of a Computational Scientist}
+    \begin{itemize}
+      \item Computational scientists are expected to be:
+        \begin{itemize}
+          \item Physicist --- addressed in curriculum  \\[0.5em]
+          \item Numerical analyst --- addressed in curriculum  \\[0.5em]
+          \item Software developer --- not usually addressed
+        \end{itemize}
+      \item Software engineering is vital
+        \begin{itemize}
+          \item Understandable code
+        \end{itemize}
+    \end{itemize}
+    \begin{tcolorbox}[title=Software engineering gap, arc is angular]
+      Software engineering is not part of the formal curriculum and therefore 
+      most scientific software developed in academia is unverified.  Furthermore, 
+      the software developed is unable to ever be verified without significant 
+      time investment.
+    \end{tcolorbox}
+  \end{frame}
+
+  \begin{frame}{Version Control}
+    \begin{itemize}
+      \item Minimum guidlines --- Actually using version control is the first step \\[1.0em]
+      \item Ideal usage:
+        \begin{itemize}
+          \item Put \textbf{everything} under version control \\[0.5em]
+          \item Consider putting parts of your home directory under version control \\[0.5em]
+          \item Use a consistent project structure and naming convention \\[0.5em]
+          \item Commit often and in logical chunks \\[0.5em]
+          \item Write meaningful commit messages \\[0.5em]
+          \item Do all file operations in the version control system \\[0.5em]
+          \item Set up change notifications if working with multiple people
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Source Control and Versioning}
+    \begin{itemize}
+      \item Why bother? \\[1.0em]
+      \item Codes evolve over time \\[0.5em]
+        \begin{itemize}
+          \item Sometimes bugs creep in (by you or others) \\[0.5em]
+          \item Sometimes the old way was right  \\[0.5em]
+          \item Sometimes it's nice to look back at the evolution \\[1.0em]
+        \end{itemize}
+      \item How can you get back to an old version? \\[0.5em]
+        \begin{itemize}
+          \item Keep a copy of every version of every file \\[0.5em] 
+            \begin{itemize}
+              \item Disk is cheap, but this could get out of hand quickly  \\[0.25em]
+              \item \textbf{Huge} pain to maintain \\[0.5em]
+            \end{itemize}
+          \item Use a tool
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Some Example Tools}
+    \begin{itemize}
+      \item Free
+      \begin{itemize}
+        \item RCS --- Revision Control System \tikzmark{topbraceC} 
+        \item CVS --- Concurrent Versions System \tikzmark{rightC}
+        \item SVN --- Subversion  \tikzmark{bottombraceC} 
+        \item Git --- \url{https://git-scm.com/} \tikzmark{topbraceD}
+        \item Mercurial --- \url{https://www.mercurial-scm.org/} \tikzmark{bottombraceD} \tikzmark{rightD}
+      \end{itemize}
+      %\begin{tikzpicture}[overlay, remember picture]
+      %  \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
+      %        let \p1=(topbrace), \p2=(bottombrace) in
+      %        ({max(\x1,\x2)}, {\y1+0.8em}) -- node[right=0.6em] {I'd like some text here} ({max(\x1,\x2)}, {\y2});
+      %\end{tikzpicture}
+      %\begin{tikzpicture}[overlay, remember picture]
+      %  \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,gray]
+      %        ($(right)!(topbrace.north)!($(right)-(0,1)$)$) --  ($(right)!(bottombrace.south)!($(right)-(0,1)$)$);
+      %\end{tikzpicture}
+      \begin{tikzpicture}[overlay, remember picture]
+        \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,gray]
+              ($(rightC)!(topbraceC.north)!($(rightC)-(0,1)$) + (0,0.8em)$) --  node[right=0.6em] {Centralized} ($(rightC)!(bottombraceC.south)!($(rightC)-(0,1)$)$);
+      \end{tikzpicture}
+      \begin{tikzpicture}[overlay, remember picture]
+        \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,gray]
+              ($(rightD)!(topbraceD.north)!($(rightD)-(0,1)$) + (0,0.8em)$) --  node[right=0.6em] {Distributed} ($(rightD)!(bottombraceD.south)!($(rightD)-(0,1)$)$);
+      \end{tikzpicture}
+    \end{itemize}
+    \begin{itemize}
+      \item Commercial
+      \begin{itemize}
+        \item MS Visual Studio Team System
+        \item IBM Rational Software:  Clearcase
+        \item AccuRev
+        \item MKS Integrity
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Comments on Centralized Source Control}
+    \begin{itemize}
+      \item A central repository holds the files in both of the following models
+      \begin{itemize}
+        \item This means a specific computer is required with some disk space
+        \item It should be backed up!
+      \end{itemize}
+    \end{itemize}
+    \begin{columns}[T]
+      \begin{column}{0.5\textwidth}
+        \begin{enumerate}
+          \item Read-only Local Workspaces and Locks
+          \begin{itemize}
+            \item Every developer has a read-only local copy of the source files 
+            \item Individual files are checked-out as needed and locked in the repo in 
+                  order to gain write access 
+            \item Unlocking the file commits the changes to the repo and makes the file 
+                  read-only again
+          \end{itemize}
+          \saveenum
+        \end{enumerate}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \begin{enumerate}
+          \resume
+          \item Read / Write Local Workspaces and Merging
+          \begin{itemize}
+            \item Every developer has a local copy of the source files
+            \item Everybody can read and write files in their local copy
+            \item Conflicts between simultaneous edits handled with merging algorithms 
+                  or manually when files are synced against the repo or committed to it 
+            \item CVS and Subverions behave this way
+          \end{itemize}
+        \end{enumerate}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}{CVS --- Concurrent Versions System}
+    \begin{itemize}
+      \item Started with some shell scripts in 1986 \\[0.5em]
+      \item Recoded in 1989 \\[0.5em]
+      \item Evolving ever since (mostly unchanging now) \\[0.5em]
+      \item Uses read / write local workspaces and merging \\[0.5em]
+      \item Only stores differences between versions \\[0.25em]
+      \begin{itemize}
+        \item Saves space
+        \item Basically uses \texttt{diff(1)} and \texttt{diff3(1)}
+      \end{itemize}
+      \item Works with local repositories or over the network with rsh / ssh
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Subversion}
+    Subversion is a functional superset of CVS (if you learned CVS previously, you can 
+    also function in Subversion)
+    \begin{itemize}
+      \item Began initial development in 2000 as a replacement for CVS \\[0.5em] 
+      \item Also interacts with local copies \\[0.5em]
+      \item Includes directory versioning (rename and moves) \\[0.5em]
+      \item Truly atomic commits \\[0.25em]
+      \begin{itemize}
+        \item i.e. interrupted commit operations do not cause repository inconsistency 
+              or corruption
+      \end{itemize}
+      \item File meta-data \\[0.5em]
+      \item True client-server model \\[0.5em] 
+      \item Cross-platform, open-source
+    \end{itemize}
+  \end{frame}
 
 \end{document}
