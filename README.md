@@ -1,4 +1,8 @@
-# CS207 Course Repository for David Sondak
+# CS207 Course Repository
 
-This is my course repository for CS207.  I'm pretending to 
-be a student.
+This repo contains course information for CS207 in 
+Fall 2017.
+
+### Contents:
+**homeworks** --- Directory for homework assignments
+**lectures** --- Directory for lectures
