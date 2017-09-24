@@ -11859,7 +11859,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lecture-7">Lecture 7<a class="anchor-link" href="#Lecture-7">&#182;</a></h1>
+<h1 id="Lecture-7">Lecture 7<a class="anchor-link" href="#Lecture-7">&#182;</a></h1><h2 id="Software-design,-documentation,-and-testing">Software design, documentation, and testing<a class="anchor-link" href="#Software-design,-documentation,-and-testing">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11881,35 +11881,29 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Software-Design-Desirables">Software Design Desirables<a class="anchor-link" href="#Software-Design-Desirables">&#182;</a></h2><ul>
-<li><p>Documentation</p>
-<ul>
+<li>Documentation<ul>
 <li>names (understandable names)</li>
 <li>pre+post conditions or requirements</li>
 </ul>
 </li>
-<li><p>Maintainability</p>
-<ul>
+<li>Maintainability<ul>
 <li>Extensibility</li>
 <li>Modularity and Encapsulation</li>
 </ul>
 </li>
-<li><p>Portability</p>
-</li>
-<li><p>Installability</p>
-</li>
-<li><p>Generality</p>
-<ul>
+<li>Portability</li>
+<li>Installability</li>
+<li>Generality<ul>
 <li>Data Abstraction (change types, change data structures)</li>
 <li>Functional Abstraction (the object model, overloading)</li>
 <li>Robustness<ul>
 <li>Provability: Invariants, preconditions, postconditions</li>
-<li>User Proofing, Adversarial Inputs</li>
+<li>User Proofing, Adversarial Inputs </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Efficiency</p>
-<ul>
+<li>Efficiency<ul>
 <li>Use of appropriate algorithms and data structures</li>
 <li>Optimization (but no premature optimization)</li>
 </ul>
@@ -11926,28 +11920,22 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Issues-to-be-aware-of:">Issues to be aware of:<a class="anchor-link" href="#Issues-to-be-aware-of:">&#182;</a></h2><ul>
 <li><p><strong>Interfaces</strong></p>
-<p>Your program is being designed to be used by someone: either an end user, another programmer (you are writing a library), or even yourself (we are talking about some layer in your program). This interface is a contract between you and the user.</p>
+<p>Your program is being designed to be used by someone: either an end user, another programmer, or even yourself. This interface is a contract between you and the user.</p>
 </li>
-</ul>
-<ul>
 <li><p><strong>Hiding Information</strong></p>
-<p>There is information hiding between layers (a higher up layer can be more abstract). Encapsulation,  abstraction,  modularization, are some of the techniques used here.</p>
+<p>There is information hiding between layers (a higher up layer can be more abstract). Encapsulation,  abstraction, and modularization, are some of the techniques used here.</p>
 </li>
-</ul>
-<ul>
 <li><p><strong>Resource Management</strong></p>
 <p>Resource management issues: who allocates storage for data structures.  Generally we want resource allocation/deallocation to happen in the same layer.</p>
 </li>
-</ul>
-<ul>
 <li><p><strong>How to Deal with Errors</strong></p>
-<p>Do we return special values? Do we throw exceptions? Who handles them? (generally we want to catch even the lowest level error and give the client the chance to handle it)</p>
+<p>Do we return special values? Do we throw exceptions? Who handles them?</p>
 </li>
 </ul>
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12000,7 +11988,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-good-documentation">Write good documentation<a class="anchor-link" href="#Write-good-documentation">&#182;</a></h3><ul>
 <li>Follow standards of <a href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a></li>
-<li>Clearly output the inputs, outputs, default values, and expected behavior</li>
+<li>Clearly outline the inputs, outputs, default values, and expected behavior</li>
 <li>Include basic usage examples when possible</li>
 </ul>
 
@@ -12013,7 +12001,7 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">quad_roots</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Returns the roots of a quadratic equation: ax^2 + bx + c.</span>
+    <span class="sd">&quot;&quot;&quot;Returns the roots of a quadratic equation: ax^2 + bx + c = 0.</span>
 <span class="sd">    </span>
 <span class="sd">    INPUTS</span>
 <span class="sd">    =======</span>
@@ -12032,7 +12020,7 @@ a.anchor-link {
 <span class="sd">    </span>
 <span class="sd">    EXAMPLES</span>
 <span class="sd">    =========</span>
-<span class="sd">    &gt;&gt;&gt; quad_roots(1.0, 2.0, 3.0)</span>
+<span class="sd">    &gt;&gt;&gt; quad_roots(1.0, 1.0, -12.0)</span>
 <span class="sd">    ((3+0j), (-4+0j))</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">cmath</span> <span class="c1"># Can return complex numbers from square roots</span>
@@ -12055,14 +12043,14 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Documening-Invariants">Documening Invariants<a class="anchor-link" href="#Documening-Invariants">&#182;</a></h3><ul>
+<h3 id="Documenting-Invariants">Documenting Invariants<a class="anchor-link" href="#Documenting-Invariants">&#182;</a></h3><ul>
 <li>An invariant is something that is true at some point in the code.</li>
 <li>Invariants and the contract are what we use to guide our implementation.</li>
 <li>Pre-conditions and post-conditions are special cases of invariants.</li>
 <li>Pre-conditions are true at function entry. They constrain the user.</li>
 <li>Post-conditions are true at function exit. They constrain the implementation.</li>
 </ul>
-<p>You can change implementations, stuff under the hood, etc, but once the software is in the wild <strong>you cant change the pre-conditions and post-conditions</strong> since the client user is depending upon them.</p>
+<p>You can change implementations, stuff under the hood, etc, but once the software is in the wild <strong>you can't change the pre-conditions and post-conditions</strong> since the client user is depending upon them.</p>
 
 </div>
 </div>
@@ -12092,7 +12080,9 @@ a.anchor-link {
 
 <span class="sd">    NOTES</span>
 <span class="sd">    =====</span>
-<span class="sd">    PRE: a, b, c have numeric type</span>
+<span class="sd">    PRE: </span>
+<span class="sd">         - a, b, c have numeric type</span>
+<span class="sd">         - three or fewer inputs</span>
 <span class="sd">    POST:</span>
 <span class="sd">         - a, b, and c are not changed by this function</span>
 <span class="sd">         - raises a ValueError exception if a = 0</span>
@@ -12124,9 +12114,9 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Accessing-Documentation-(1)">Accessing Documentation (1)<a class="anchor-link" href="#Accessing-Documentation-(1)">&#182;</a></h3><ul>
-<li>Documentation can be accessed by calling the <code>__doc__</code> special method of the function</li>
+<li>Documentation can be accessed by calling the <code>__doc__</code> special method</li>
 <li>Simply calling <code>function_name.__doc__</code> will give a pretty ugly output</li>
-<li>You can make it cleaner by making use of <code>splitlines()</code>: <code>function_name.__doc__.splitlines()</code></li>
+<li>You can make it cleaner by making use of <code>splitlines()</code></li>
 </ul>
 
 </div>
@@ -12173,7 +12163,9 @@ a.anchor-link {
  &#39;&#39;,
  &#39;    NOTES&#39;,
  &#39;    =====&#39;,
- &#39;    PRE: a, b, c have numeric type&#39;,
+ &#39;    PRE: &#39;,
+ &#39;         - a, b, c have numeric type&#39;,
+ &#39;         - three or fewer inputs&#39;,
  &#39;    POST:&#39;,
  &#39;         - a, b, and c are not changed by this function&#39;,
  &#39;         - raises a ValueError exception if a = 0&#39;,
@@ -12245,7 +12237,9 @@ quad_roots(a=1.0, b=2.0, c=0.0)
     
     NOTES
     =====
-    PRE: a, b, c have numeric type
+    PRE: 
+         - a, b, c have numeric type
+         - three or fewer inputs
     POST:
          - a, b, and c are not changed by this function
          - raises a ValueError exception if a = 0
@@ -12310,9 +12304,9 @@ quad_roots(a=1.0, b=2.0, c=0.0)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="doctest"><code>doctest</code><a class="anchor-link" href="#doctest">&#182;</a></h3><p>The <code>doctest</code> module allows us to test pieces of code that we put into our documentation string.</p>
-<p>The doctests are a type of <strong>unit test</strong> (more on this later), which document the interface of the function by example.</p>
-<p>Doctests are an example of a <strong>test harness</strong>.  We write some tests and execute them all at once.  Note that individual tests can be written an executed individually in an ad-hoc manner.  However, that is especially inefficient.</p>
+<h3 id="doctest"><code>doctest</code><a class="anchor-link" href="#doctest">&#182;</a></h3><p>The <code>doctest</code> module allows us to test pieces of code that we put into our doc. string.</p>
+<p>The doctests are a type of <strong>unit test</strong>, which document the interface of the function by example.</p>
+<p>Doctests are an example of a <strong>test harness</strong>.  We write some tests and execute them all at once.  Note that individual tests can be written and executed individually in an ad-hoc manner.  However, that is especially inefficient.</p>
 <p>Of course, too many doctests clutter the documentation section.</p>
 <p>The doctests should not cover every case; they should describe the various ways a class or function can be used.  There are better ways to do more comprehensive testing.</p>
 
@@ -12321,7 +12315,7 @@ quad_roots(a=1.0, b=2.0, c=0.0)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">doctest</span>
@@ -12357,7 +12351,7 @@ Test passed.
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12404,7 +12398,7 @@ Test passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_quadroots</span><span class="p">():</span>
@@ -12430,7 +12424,7 @@ Test passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_quadroots_types</span><span class="p">():</span>
@@ -12459,7 +12453,7 @@ Test passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_quadroots_zerocoeff</span><span class="p">():</span>
@@ -12481,12 +12475,595 @@ Test passed.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Automate-Using-a-Test-Harness">Automate Using a Test Harness<a class="anchor-link" href="#Automate-Using-a-Test-Harness">&#182;</a></h4><p>Great!  So we've written some ad-hoc tests.  It's pretty clunky.  We should use a <strong>test harness</strong>.</p>
+<h4 id="When-you-get-an-error">When you get an error<a class="anchor-link" href="#When-you-get-an-error">&#182;</a></h4><p>It could be that:</p>
+<ul>
+<li>you messed up an implementation</li>
+<li>you did not handle a case</li>
+<li>your test was messed up (be careful of this)</li>
+</ul>
+<p>If the error was not found in an existing test, create a new test that represents the problem <strong>before</strong> you do anything else. The test should capture the essence of the problem: this process itself is useful in uncovering bugs. Then this error may even suggest more tests.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Automate-Using-a-Test-Harness">Automate Using a Test Harness<a class="anchor-link" href="#Automate-Using-a-Test-Harness">&#182;</a></h3><p>Great!  So we've written some ad-hoc tests.  It's pretty clunky.  We should use a <strong>test harness</strong>.</p>
 <p>As mentioned already, <code>doctest</code> is a type of test harness.  It has it's uses, but gets messy quickly.</p>
 <p>We'll talk about <strong><a href="https://docs.pytest.org/en/latest/"><code>pytest</code></a></strong> here.</p>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Preliminaries">Preliminaries<a class="anchor-link" href="#Preliminaries">&#182;</a></h4><ol>
+<li>The idea is that our code consists of several different pieces (or objects)</li>
+<li>The objects are grouped based on how they are related to each other<ul>
+<li>e.g. you may have a class that contains different statistical operations</li>
+<li>We'll get into this idea much more in the coming weeks</li>
+</ul>
+</li>
+<li>For now, we can think of having related functions all in one file</li>
+<li>We want to test each of those functions<ul>
+<li>Tests should include checking correctness of output, correctness of input, fringe cases, etc</li>
+</ul>
+</li>
+</ol>
+<p>I will work in the Jupyter notebook for demo purposes.</p>
+<p>To create and save a file in the Jupyter notebook, you type <code>%%file file_name.py</code>.</p>
+<p>I highly recommend that you actually write your code using a text editor (like <code>vim</code>) or an <code>IDE</code> like <code>Sypder</code>.</p>
+<p>The toy examples that we've been working with in the class so far can be done in Jupyter, but a real project can be done more efficiently through other means.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">file</span> roots.py
+def quad_roots(a=1.0, b=2.0, c=0.0):
+    &quot;&quot;&quot;Returns the roots of a quadratic equation: ax^2 + bx + c = 0.
+    
+    INPUTS
+    =======
+    a: float, optional, default value is 1
+       Coefficient of quadratic term
+    b: float, optional, default value is 2
+       Coefficient of linear term
+    c: float, optional, default value is 0
+       Constant term
+    
+    RETURNS
+    ========
+    roots: 2-tuple of complex floats
+       Has the form (root1, root2) unless a = 0 
+       in which case a ValueError exception is raised
+    
+    EXAMPLES
+    =========
+    &gt;&gt;&gt; quad_roots(1.0, 1.0, -12.0)
+    ((3+0j), (-4+0j))
+    &quot;&quot;&quot;
+    import cmath # Can return complex numbers from square roots
+    if a == 0:
+        raise ValueError(&quot;The quadratic coefficient is zero.  This is not a quadratic equation.&quot;)
+    else:
+        sqrtdisc = cmath.sqrt(b * b - 4.0 * a * c)
+        r1 = -b + sqrtdisc
+        r2 = -b - sqrtdisc
+        return (r1 / 2.0 / a, r2 / 2.0 / a)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting roots.py
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's put our tests into one file.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">file</span> test_roots.py
+import roots
+
+def test_quadroots_result():
+    assert roots.quad_roots(1.0, 1.0, -12.0) == ((3+0j), (-4+0j))
+
+def test_quadroots_types():
+    try:
+        roots.quad_roots(&quot;&quot;, &quot;green&quot;, &quot;hi&quot;)
+    except TypeError as err:
+        assert(type(err) == TypeError)
+
+def test_quadroots_zerocoeff():
+    try:
+        roots.quad_roots(a=0.0)
+    except ValueError as err:
+        assert(type(err) == ValueError)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting test_roots.py
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /Users/dsondak/Teaching/Harvard/CS207/F17/students/cs207_david_sondak/lectures/L7, inifile:
+plugins: cov-2.5.1
+collected 3 items 
+
+test_roots.py ...
+
+<span class="ansi-green-intense-fg ansi-bold">=========================== 3 passed in 0.02 seconds ===========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Code-Coverage">Code Coverage<a class="anchor-link" href="#Code-Coverage">&#182;</a></h3><p>In some sense, it would be nice to somehow check that every line in a program has been covered by a test.  If you could do this, you might know that a particular line has not contributed to making something wrong. But this is hard to do: it would be hard to use normal input data to force a program to go through particular statements. So we settle for testing the important lines. The <code>pytest-cov</code> module makes sure that this works.</p>
+<p>Coverage does not mean that every edge case has been tried, but rather, every critical statement has been.</p>
+<p>Let's add a new function to our roots file.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">file</span> roots.py
+def linear_roots(a=1.0, b=0.0):
+    &quot;&quot;&quot;Returns the roots of a linear equation: ax+ b = 0.
+    
+    INPUTS
+    =======
+    a: float, optional, default value is 1
+       Coefficient of linear term
+    b: float, optional, default value is 0
+       Coefficient of constant term
+    
+    RETURNS
+    ========
+    roots: 1-tuple of real floats
+       Has the form (root) unless a = 0 
+       in which case a ValueError exception is raised
+    
+    EXAMPLES
+    =========
+    &gt;&gt;&gt; linear_roots(1.0, 2.0)
+    -2.0
+    &quot;&quot;&quot;
+    if a == 0:
+        raise ValueError(&quot;The linear coefficient is zero.  This is not a linear equation.&quot;)
+    else:
+        return ((-b / a))
+
+def quad_roots(a=1.0, b=2.0, c=0.0):
+    &quot;&quot;&quot;Returns the roots of a quadratic equation: ax^2 + bx + c = 0.
+    
+    INPUTS
+    =======
+    a: float, optional, default value is 1
+       Coefficient of quadratic term
+    b: float, optional, default value is 2
+       Coefficient of linear term
+    c: float, optional, default value is 0
+       Constant term
+    
+    RETURNS
+    ========
+    roots: 2-tuple of complex floats
+       Has the form (root1, root2) unless a = 0 
+       in which case a ValueError exception is raised
+    
+    EXAMPLES
+    =========
+    &gt;&gt;&gt; quad_roots(1.0, 1.0, -12.0)
+    ((3+0j), (-4+0j))
+    &quot;&quot;&quot;
+    import cmath # Can return complex numbers from square roots
+    if a == 0:
+        raise ValueError(&quot;The quadratic coefficient is zero.  This is not a quadratic equation.&quot;)
+    else:
+        sqrtdisc = cmath.sqrt(b * b - 4.0 * a * c)
+        r1 = -b + sqrtdisc
+        r2 = -b - sqrtdisc
+        return (r1 / 2.0 / a, r2 / 2.0 / a)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting roots.py
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Run-the-tests-and-check-code-coverage">Run the tests and check code coverage<a class="anchor-link" href="#Run-the-tests-and-check-code-coverage">&#182;</a></h4>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --cov
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /Users/dsondak/Teaching/Harvard/CS207/F17/students/cs207_david_sondak/lectures/L7, inifile:
+plugins: cov-2.5.1
+collected 3 items 
+
+test_roots.py ...
+
+---------- coverage: platform darwin, python 3.6.1-final-0 -----------
+Name            Stmts   Miss  Cover
+-----------------------------------
+roots.py           12      3    75%
+test_roots.py      13      0   100%
+-----------------------------------
+TOTAL              25      3    88%
+
+
+<span class="ansi-green-intense-fg ansi-bold">=========================== 3 passed in 0.02 seconds ===========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Run-the-tests,-report-code-coverage,-and-report-missing-lines.">Run the tests, report code coverage, and report missing lines.<a class="anchor-link" href="#Run-the-tests,-report-code-coverage,-and-report-missing-lines.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --cov --cov-report term-missing
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /Users/dsondak/Teaching/Harvard/CS207/F17/students/cs207_david_sondak/lectures/L7, inifile:
+plugins: cov-2.5.1
+collected 3 items 
+
+test_roots.py ...
+
+---------- coverage: platform darwin, python 3.6.1-final-0 -----------
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+roots.py           12      3    75%   22-25
+test_roots.py      13      0   100%
+---------------------------------------------
+TOTAL              25      3    88%
+
+
+<span class="ansi-green-intense-fg ansi-bold">=========================== 3 passed in 0.02 seconds ===========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Run-tests,-including-the-doctests,-report-code-coverage,-and-report-missing-lines.">Run tests, <strong>including the doctests</strong>, report code coverage, and report missing lines.<a class="anchor-link" href="#Run-tests,-including-the-doctests,-report-code-coverage,-and-report-missing-lines.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --doctest-modules --cov --cov-report term-missing
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /Users/dsondak/Teaching/Harvard/CS207/F17/students/cs207_david_sondak/lectures/L7, inifile:
+plugins: cov-2.5.1
+collected 5 items <span class="ansi-bold">
+</span>
+roots.py ..
+test_roots.py ...
+
+---------- coverage: platform darwin, python 3.6.1-final-0 -----------
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+roots.py           12      1    92%   23
+test_roots.py      13      0   100%
+---------------------------------------------
+TOTAL              25      1    96%
+
+
+<span class="ansi-green-intense-fg ansi-bold">=========================== 5 passed in 0.05 seconds ===========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Let's-put-some-tests-in-for-the-linear-roots-function.">Let's put some tests in for the linear roots function.<a class="anchor-link" href="#Let's-put-some-tests-in-for-the-linear-roots-function.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">file</span> test_roots.py
+import roots
+
+def test_quadroots_result():
+    assert roots.quad_roots(1.0, 1.0, -12.0) == ((3+0j), (-4+0j))
+
+def test_quadroots_types():
+    try:
+        roots.quad_roots(&quot;&quot;, &quot;green&quot;, &quot;hi&quot;)
+    except TypeError as err:
+        assert(type(err) == TypeError)
+
+def test_quadroots_zerocoeff():
+    try:
+        roots.quad_roots(a=0.0)
+    except ValueError as err:
+        assert(type(err) == ValueError)
+
+def test_linearoots_result():
+    assert roots.linear_roots(2.0, -3.0) == 1.5
+
+def test_linearroots_types():
+    try:
+        roots.linear_roots(&quot;ocean&quot;, 6.0)
+    except TypeError as err:
+        assert(type(err) == TypeError)
+
+def test_linearroots_zerocoeff():
+    try:
+        roots.linear_roots(a=0.0)
+    except ValueError as err:
+        assert(type(err) == ValueError)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting test_roots.py
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Now-run-the-tests-and-check-code-coverage.">Now run the tests and check code coverage.<a class="anchor-link" href="#Now-run-the-tests-and-check-code-coverage.">&#182;</a></h4>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --doctest-modules --cov --cov-report term-missing
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /Users/dsondak/Teaching/Harvard/CS207/F17/students/cs207_david_sondak/lectures/L7, inifile:
+plugins: cov-2.5.1
+collected 8 items <span class="ansi-bold">
+</span>
+roots.py ..
+test_roots.py ......
+
+---------- coverage: platform darwin, python 3.6.1-final-0 -----------
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+roots.py           12      0   100%
+test_roots.py      25      0   100%
+---------------------------------------------
+TOTAL              37      0   100%
+
+
+<span class="ansi-green-intense-fg ansi-bold">=========================== 8 passed in 0.06 seconds ===========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section>
 </div>
 </div>
