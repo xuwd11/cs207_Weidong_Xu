@@ -11945,8 +11945,8 @@ a.anchor-link {
 <ul>
 <li>hide implementation details</li>
 <li>have a small set of operations exposed, the smallest possible, and these should be orthogonal. Be stingy with the user.</li>
-<li>but be transparent with the user in what goes on behind the scenes</li>
-<li>be consistent internally: library functions should have similar signature, classes similar methods, and externally programs should have the same cli flags</li>
+<li>be transparent with the user in what goes on behind the scenes</li>
+<li>be consistent internally: library functions should have similar signature, classes similar methods, and external programs should have the same cli flags</li>
 </ul>
 <p><strong> Testing should deal with ALL of the issues above, and each layer ought to be tested separately </strong>.</p>
 
@@ -12295,7 +12295,7 @@ quad_roots(a=1.0, b=2.0, c=0.0)
 <p>From The Practice of Programming:</p>
 <blockquote><p>The  effort  of  testing as  you  go  is  minimal  and  pays off  handsomely.  Thinking about testing as you  write a program will  lead to better code, because that's when you know  best  what the code should do.  <strong>If  instead  you  wait  until  something breaks, you will  probably  have forgotten how  the code works</strong>.  Working under  pressure, you  will need  to figure it  out again, which  takes time, and  the fixes  will  be  less  thorough  and more fragile because your refreshed understanding is  likely to be incomplete.</p>
 </blockquote>
-
+<h4 id="Test-Driven-Develoment"><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test Driven Develoment</a><a class="anchor-link" href="#Test-Driven-Develoment">&#182;</a></h4>
 </div>
 </div>
 </div></section><section>
@@ -12376,7 +12376,7 @@ Test passed.
 <li>The idea is that most errors happen at data boundaries such as empty input, single input item, exactly full array, wierd values, etc. If a piece of code works at the boundaries, its likely to work elsewhere...</li>
 </ul>
 </li>
-<li>Program defensively<blockquote><p>"Program  defensively.  A  useful  technique is  to  add  code  to  handle  "can't  happen" cases,  situations  where  it  is  not  logically  possible  for  something  to  happen  but (because of  some failure elsewhere) it might anyway.  Adding a test for zero or nega- tive array lengths to avg  was one example.  As another example, a program  process- ing  grades might  expect  that  there  would  be  no  negative  or huge  values  but  should check anyway.</p>
+<li>Program defensively<blockquote><p>"Program  defensively.  A  useful  technique is  to  add  code  to  handle  "can't  happen" cases,  situations  where  it  is  not  logically  possible  for  something  to  happen  but (because of  some failure elsewhere) it might anyway.  As an example, a program  processing  grades might  expect  that  there  would  be  no  negative  or huge  values but should check anyway.</p>
 </blockquote>
 </li>
 <li>Automate using a test harness</li>
