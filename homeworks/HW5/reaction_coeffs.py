@@ -75,7 +75,7 @@ def mod_arr(A, b, E, T, R=8.314):
     A: float
        The Arrhenius prefactor.
     b: float
-       The modified Arrhenius parameter. If `b` is not a float number, a conversion is attempted.
+       The modified Arrhenius parameter. If b is not a float number, a conversion is attempted.
     E: float
        The activation energy for the reaction (in the same unit as R*T).
     T: float
