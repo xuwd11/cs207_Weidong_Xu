@@ -12094,7 +12094,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Example:--Instance-Equality-via-__eq__">Example:  Instance Equality via <code>__eq__</code><a class="anchor-link" href="#Example:--Instance-Equality-via-__eq__">&#182;</a></h2><p>We can now ask and answer the question:  What makes two objects equal?</p>
-<p>To do this, we will add a new dunder method to the mix, the unimaginatively named (thats a good thing) <code>__eq__</code>.</p>
+<p>To do this, we will add a new dunder method to the mix, the unimaginatively named (that's a good thing) <code>__eq__</code>.</p>
 
 </div>
 </div>
@@ -12197,7 +12197,7 @@ False           False           True
 <h2 id="Python's-power-comes-from-the-data-model,-composition,-and-delegation">Python's power comes from the data model, composition, and delegation<a class="anchor-link" href="#Python's-power-comes-from-the-data-model,-composition,-and-delegation">&#182;</a></h2><p>The data model is used (from <strong>Fluent Python</strong>) to provide a:</p>
 <blockquote><p>description of the interfaces of the building blocks of the language itself, such as sequences, iterators, functions, classes....</p>
 </blockquote>
-<p>The special "dunder" methods we talk about are invoked by the <code>Python</code> interpreter to beform basic operations.</p>
+<p>The special "dunder" methods we talk about are invoked by the <code>Python</code> interpreter to perform basic operations.</p>
 <p>For example, <code>__getitem__</code> gets an item in a sequence. This is used to do something like <code>a[3]</code>.</p>
 <p><code>__len__</code> is used to say how long a sequence is. Its invoked by the <code>len</code> built-in function.</p>
 <p>A <strong>sequence</strong>, for example,  must implement <code>__len__</code> and <code>__getitem__</code>. Thats it.</p>
@@ -12380,7 +12380,7 @@ False           False           True
     <span class="n">suits</span><span class="o">=</span><span class="s2">&quot;spade diamond club heart&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
     
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># composition: there are items IN this class that constutute its structure</span>
+        <span class="c1"># composition: there are items IN this class that constitute its structure</span>
         <span class="c1"># delegation: the storage for this class is DELEGATED to this list below</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cards</span> <span class="o">=</span> <span class="p">[</span><span class="n">Card</span><span class="p">(</span><span class="n">rank</span><span class="p">,</span> <span class="n">suit</span><span class="p">)</span> <span class="k">for</span> <span class="n">suit</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">suits</span> <span class="k">for</span> <span class="n">rank</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ranks</span><span class="p">]</span>
         
