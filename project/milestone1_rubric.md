@@ -54,37 +54,32 @@ Your code must be able to read in and parse an `XML` input file (as discussed in
 provide you with the form of the input file.
 
 ## Code design
-Your code must be written in an object oriented manner.  Here is an outline of the required 
-structural components:
+Your code must be written in an object oriented manner.  We want to give you broad freedoms 
+in how you design your code.  To that end, we shall refrain from imposing stringent 
+structural or design requirements on your code.  However, a few basic requirements must 
+be met.  These are:
+
 * You should include all classes in a single file called `chemkin.py`.  
-* All classes must include at least two special methods.
-* Make a class for reaction rate coefficients.  So far we have only talked about three types 
-  of reaction rate coefficients:  constant, Arrhenius, and modified Arrhenius.  There are 
-  other types and your code should be easily extensible to handle new types of reaction 
-  rate coefficients in future verions.
-  - At a minimum, your reaction rate coefficients class should consist of:
-    1. A reaction rate base class with a constructor and other special methods as necessary 
-       (e.g. `__repr__`).
-    2. A subclass that implements the Arrhenius reaction rate coefficients.
-    3. The constant reaction rate coefficient can go in it's own subclass, the base class, 
-       or the Arrhenius subclass.
-    4. If you think that there is a better way to design the reaction rate coefficients 
-       class, then feel free to do so.  Just remember that you must include the 
-       three typs of reaction rate coefficients discussed in class and permit the 
-       code to be extended to other types of reaction rate coefficients.
-* Make a class for reactions.  So far we have only talked about irreversible elementary reactions.  
-  There are other types of irreversible reactions.  For example, *three-body reactions* and *duplicate* 
-  reactions are common.  There could be other types as well.  Your code should be 
-  written in such a way that it can be easily extended to these other types of reactions 
-  in future versions.
-  - At a minimum, your reactions class should consist of:
-    1. A base class with a constructor and other special methods as necessary
-       (e.g. `__repr__).
-    2. A subclass for irreversible reactions.
-    3. Methods for computing progress rates and reaction rates.
-* Note that we have only worked with **irreversible** reactions.  Most reactions are 
-  actually reversible.  Your code should be aware of this fact and have hooks for 
-  future modifications that can handle fully reversible reactions.
+* There must be at least one class that contains the relevant kinetics methods.
+* You must have *at least* two special methods (such as `__repr__` or `__len__`.
+* Your code must be able to handle the following situations:
+  - Elementary reactions
+  - Irreversible reactions
+  - Constant reaction rate coefficients
+  - Arrhenius reaction rate coefficients
+  - Modified Arrhenius (a.k.a Kooij) reaction rate coefficients
+* The code must be sufficiently general to handle an arbitrary number of 
+  species.
+* The code must be sufficiently general to handle an arbibrary number of 
+  elementary reactions.
+* The code must be easily extensible with hooks for the following:
+  - Reversible reactions
+  - Non-elementary reactions (for example "duplicate reactions" or "three-body reactions")
+  - Reaction rate coefficients not discussed in class.
+  Your code should handle each of the situations above gracefully.  You choose 
+  how to handle the situation.
+  
+
 
 ## Test suite
 Be sure to include a comprehensive test suite.  You must use Travis CI to run your tests 
