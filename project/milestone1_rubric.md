@@ -13,14 +13,17 @@
 ## Due Date:  Wednesday, October 18th 2017
 Groups will present their project to the teaching staff in a code-review session.  
 The presentations should include a demo of the code to show that all of the 
-requirements are met.  The teaching staff may run additional tests to check the 
-different aspects of the code.
+requirements are met.
 
 You are not required to make a formal presentation.  Your group should simply 
 be prepared to demo your code.
 
 The output of your code should be the reaction rates of a set of species given 
 a set of elementary reactions.
+
+The teaching staff will try a variety of input files on your code to test 
+different situations (e.g. different reactions, erroneous inputs, different 
+species, different reaction rate coefficients, etc).
 
 ---
 
