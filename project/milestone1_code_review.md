@@ -1,7 +1,7 @@
 # Milestone 1 Code Review
 ---
 
-** Please arrive *at least* ten minutes before your scheuled time slot. **
+** Please arrive *at least* ten minutes before your scheduled time slot. **
 ---
 
 ## Format
