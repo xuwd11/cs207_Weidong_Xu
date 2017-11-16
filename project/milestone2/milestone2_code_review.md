@@ -1,4 +1,4 @@
-# Milestone 1 Code Review
+# Milestone 2 Code Review
 ---
 
 ** Please arrive *at least* ten minutes before your scheduled time slot. **
